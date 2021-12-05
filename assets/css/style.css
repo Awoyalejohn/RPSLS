@@ -104,6 +104,12 @@ img.hidden {
 }
 
 /* to test hand gesture images are displaying inside the player box*/
-.spock.player {
-  display: block;
+.rock.player {
+  display: none;
 }
+
+/* to test hand gesture images are displaying inside the computer box*/
+.rock.computer {
+  display: none;
+}
+
