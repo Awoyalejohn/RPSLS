@@ -55,8 +55,10 @@ h1, a {
   text-align: center;
 }
 
-.scores {
+.score-area {
   text-align: center;
+}
+.scores {
   display: inline-block;
   padding-left: 1rem;
   padding-right: 1rem;
