@@ -12,3 +12,8 @@ h1, a {
 .controls-area {
   text-align: center;
 }
+
+.player {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
