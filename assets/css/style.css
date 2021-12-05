@@ -94,6 +94,7 @@ footer {
   font-size: 0.8rem;
 }
 
+/* hides all the hand gesture images inside of the player and computer boxes*/
 img.hidden {
   height: 5em;
   width: 5em;
@@ -102,3 +103,7 @@ img.hidden {
   display: none;
 }
 
+/* to test hand gesture images are displaying inside the player box*/
+.spock.player {
+  display: block;
+}
