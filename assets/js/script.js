@@ -15,12 +15,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
     })
 
+
   }
 
 
 
-
-
+ 
 
 
 
@@ -31,13 +31,20 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+
+
+
+
 function runGame() {
 
+
+
 }
 
-function displayPlayerGestureChosen() {
-  
+function displayPlayerGesture() {
+ 
 }
+
 
 function displayComputerGestureChosen() {
   
