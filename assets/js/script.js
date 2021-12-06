@@ -98,19 +98,24 @@ function displayRoundWinner() {
 }
 
 function incrementWin() {
-  
+  let oldWin = parseInt(document.getElementById('win').innerText);
+  document.getElementById('win').innerText = ++oldWin;
+
 }
 
 function incrementLose() {
-  
+  let oldLose = parseInt(document.getElementById('lose').innerText);
+  document.getElementById('lose').innerText = ++oldLose;
 }
 
 function incrementDraw() {
-  
+  let oldDraw = parseInt(document.getElementById('draw').innerText);
+  document.getElementById('draw').innerText = ++oldDraw;
 }
 
-function incrementRound() {
-  
+function incrementStage() {
+  let oldStage = parseInt(document.getElementById('stage').innerText);
+  document.getElementById('stage').innerText = ++oldStage;
 }
 
 function gameoverCondition() {
