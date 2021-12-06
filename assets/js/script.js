@@ -98,24 +98,24 @@ function displayRoundWinner() {
 }
 
 function incrementWin() {
-  let oldWin = parseInt(document.getElementById('win').innerText);
-  document.getElementById('win').innerText = ++oldWin;
+  let oldScore = parseInt(document.getElementById("win").innerText);
+  document.getElementById("score").innerText = ++oldScore;
 
 }
 
 function incrementLose() {
-  let oldLose = parseInt(document.getElementById('lose').innerText);
-  document.getElementById('lose').innerText = ++oldLose;
+  let oldScore = parseInt(document.getElementById("lose").innerText);
+  document.getElementById("score").innerText = ++oldScore;
 }
 
 function incrementDraw() {
-  let oldDraw = parseInt(document.getElementById('draw').innerText);
-  document.getElementById('draw').innerText = ++oldDraw;
+  let oldScore = parseInt(document.getElementById("draw").innerText);
+  document.getElementById("score").innerText = ++oldScore;
 }
 
 function incrementStage() {
-  let oldStage = parseInt(document.getElementById('stage').innerText);
-  document.getElementById('stage').innerText = ++oldStage;
+  let oldScore = parseInt(document.getElementById("stage").innerText);
+  document.getElementById("score").innerText = ++oldScore;
 }
 
 function gameoverCondition() {
