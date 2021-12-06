@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
         alert('You clicked How to play!');
       } else {
         let handGesture = this.getAttribute("data-type");
-				runGame(handGesture);
+				runGame(handGesture) + displayRandomComputerGesture();
       }
 
     })
@@ -64,7 +64,7 @@ function runGame(handGesture) {
 
 
 	if (handGesture === "rock") {
-		displayPlayerRock();
+		displayPlayerRock()
 	} else if (handGesture === "paper") {
 	  displayPlayerPaper();
 	} else if (handGesture === "scissors") {
@@ -82,18 +82,12 @@ function runGame(handGesture) {
 
 
 function displayRandomComputerGesture() {
+  let randomNum =Math.floor(Math.random() * computerBoxChoices.length);
+  computerBoxChoices[randomNum].style.display = 'block';
   
 }
 
 
-function displayPlayerGesture() {
- 
-}
-
-
-function displayComputerGestureChosen() {
-  
-}
 
 function determineRoundWinner() {
   
