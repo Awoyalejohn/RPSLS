@@ -14,8 +14,8 @@ document.addEventListener('DOMContentLoaded', function() {
       if (this.getAttribute('data-type') === 'how to play') {
         alert('You clicked How to play!');
       } else {
-        let handGesture = this.getAttribute("data-type");
-				runGame(handGesture) + displayRandomComputerGesture();
+        let gameType = this.getAttribute("data-type");
+				runGame(gameType) + displayRandomComputerGesture();
       }
 
     })
@@ -60,24 +60,24 @@ function displayPlayerSpock() {
 }
 
 
-function runGame(handGesture) {
+function runGame(gameType) {
 
 	// displays the player's choice in player box 
 
 
-	if (handGesture === "rock") {
+	if (gameType === "rock") {
 		displayPlayerRock()
-	} else if (handGesture === "paper") {
+	} else if (gameType === "paper") {
 	  displayPlayerPaper();
-	} else if (handGesture === "scissors") {
+	} else if (gameType === "scissors") {
 	  displayPlayerScissors();
-	} else if (handGesture === "lizard") {
+	} else if (gameType === "lizard") {
 	  displayPlayerLizard();
-	} else if (handGesture === "spock") {
+	} else if (gameType === "spock") {
 	  displayPlayerSpock();
 	} else {
-		alert(`Unknown hand gesture ${handGesture}`);
-		throw `Unknown hand gesture ${handGesture}, aborting!`;
+		alert(`Unknown hand gesture ${gameType}`);
+		throw `Unknown hand gesture ${gameType}, aborting!`;
 	}
 
 }
