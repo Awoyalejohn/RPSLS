@@ -3,8 +3,6 @@ let playerBoxChoices = document.getElementsByClassName('player hidden');
 let computerBoxChoices =document.getElementsByClassName('computer hidden')
 
 
-
-
 // Wait for the DOM to finish loading before running the game
 // Get the button elemnts and add event listeners to them
 
@@ -32,6 +30,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 })
+
+
+
+
 
 
 
@@ -86,6 +88,29 @@ function displayRandomComputerGesture() {
   computerBoxChoices[randomNum].style.display = 'block';
   
 }
+
+
+
+
+function rockMatchPatterns() {
+  if (playerBoxChoices[0].style.display === 'block' && computerBoxChoices[2].style.display === 'block') {
+    alert('You Win :D');
+  } else if (playerBoxChoices[0].style.display === 'block' && computerBoxChoices[3].style.display === 'block') {
+    alert('You win :D');
+  } else if (playerBoxChoices[0].style.display === 'block' && computerBoxChoices[1].style.display === 'block') {
+    alert('You Lose :( ');
+  } else if (playerBoxChoices[0].style.display === 'block' && computerBoxChoices[4].style.display === 'block') {
+    alert('You Lose :(');
+  } else {
+    alert('Its a Draw!');
+  }
+}
+
+
+
+
+
+
 
 
 
