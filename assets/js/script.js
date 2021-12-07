@@ -101,7 +101,7 @@ function rockMatchPatterns() {
     alert('You Lose :( ');
   } else if (playerBoxChoices[0].style.display === 'block' && computerBoxChoices[4].style.display === 'block') {
     alert('You Lose :(');
-  } else {
+  } else if (playerBoxChoices[0].style.display === 'block' && computerBoxChoices[0].style.display === 'block') {
     alert('Its a Draw!');
   }
 }
@@ -115,7 +115,7 @@ function paperMatchPatterns() {
     alert('You Lose :( ');
   } else if (playerBoxChoices[1].style.display === 'block' && computerBoxChoices[3].style.display === 'block') {
     alert('You Lose :(');
-  } else {
+  } else if (playerBoxChoices[1].style.display === 'block' && computerBoxChoices[1].style.display === 'block') {
     alert('Its a Draw!');
   }
 }
