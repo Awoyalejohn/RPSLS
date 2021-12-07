@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
         alert('You clicked How to play!');
       } else {
         let gameType = this.getAttribute("data-type");
-				runGame(gameType) + displayRandomComputerGesture();
+				runGame(gameType) + determineRoundWinner();
       }
 
     })
@@ -38,24 +38,43 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-
+/**
+ * displays rock in player box
+*/
 function displayPlayerRock() {
+  clearPlayerBoxChoice();
   playerBoxChoices[0].style.display = 'block';
 }
 
+/**
+ * displays paper in player box
+*/
 function displayPlayerPaper() {
+  clearPlayerBoxChoice();
   playerBoxChoices[1].style.display = 'block';
 }
 
+/**
+ * displays scissors in player box
+*/
 function displayPlayerScissors() {
+  clearPlayerBoxChoice();
   playerBoxChoices[2].style.display = 'block';
 }
 
+/**
+ * displays lizard in player box
+*/
 function displayPlayerLizard() {
+  clearPlayerBoxChoice();
   playerBoxChoices[3].style.display = 'block';
 }
 
+/**
+ * displays spock in player box
+*/
 function displayPlayerSpock() {
+  clearPlayerBoxChoice();
   playerBoxChoices[4].style.display = 'block';
 }
 
@@ -82,16 +101,19 @@ function runGame(gameType) {
 
 }
 
+// displays the computers's choice in player box 
 
 function displayRandomComputerGesture() {
+  clearcomputerBoxChoice()
   let randomNum =Math.floor(Math.random() * computerBoxChoices.length);
   computerBoxChoices[randomNum].style.display = 'block';
   
 }
 
 
-
-
+/**
+ * calculates the outcome for when rock is chosen
+ */
 function rockMatchPatterns() {
   if (playerBoxChoices[0].style.display === 'block' && computerBoxChoices[2].style.display === 'block') {
     alert('You Win :D');
@@ -106,6 +128,9 @@ function rockMatchPatterns() {
   }
 }
 
+/**
+ * calculates the outcome for when paper is chosen
+ */
 function paperMatchPatterns() {
   if (playerBoxChoices[1].style.display === 'block' && computerBoxChoices[0].style.display === 'block') {
     alert('You Win :D');
@@ -120,6 +145,9 @@ function paperMatchPatterns() {
   }
 }
 
+/**
+ * calculates the outcome for when scissors is chosen
+ */
 function scissorsMatchPatterns() {
   if (playerBoxChoices[2].style.display === 'block' && computerBoxChoices[1].style.display === 'block') {
     alert('You Win :D');
@@ -134,6 +162,9 @@ function scissorsMatchPatterns() {
   }
 }
 
+/**
+ * calculates the outcome for when lizard is chosen
+ */
 function lizardMatchPatterns() {
   if (playerBoxChoices[3].style.display === 'block' && computerBoxChoices[1].style.display === 'block') {
     alert('You Win :D');
@@ -148,6 +179,9 @@ function lizardMatchPatterns() {
   }
 }
 
+/**
+ * calculates the outcome for when spock is chosen
+ */
 function spockMatchPatterns() {
   if (playerBoxChoices[4].style.display === 'block' && computerBoxChoices[0].style.display === 'block') {
     alert('You Win :D');
@@ -162,22 +196,43 @@ function spockMatchPatterns() {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/**
+ * calculates the outcome of all hand gestures chosen
+ */
 function determineRoundWinner() {
+  displayRandomComputerGesture();
+  rockMatchPatterns();
+  paperMatchPatterns();
+  scissorsMatchPatterns();
+  lizardMatchPatterns();
+  spockMatchPatterns();
+}
+
+/**
+ * empties player box to a new hand gesture chosen
+ */
+function clearPlayerBoxChoice() {
   
+  if (playerBoxChoices[0].style.display === 'block' || playerBoxChoices[1].style.display === 'block' || playerBoxChoices[2].style.display === 'block' || playerBoxChoices[3].style.display === 'block' || playerBoxChoices[4].style.display === 'block') {
+    playerBoxChoices[0].style.display = 'none';
+    playerBoxChoices[1].style.display = 'none';
+    playerBoxChoices[2].style.display = 'none';
+    playerBoxChoices[3].style.display = 'none';
+    playerBoxChoices[4].style.display = 'none';
+  }
+}
+
+/**
+ * empties computer box to a new hand gesture chosen
+ */
+function clearcomputerBoxChoice() {
+  if (computerBoxChoices[0].style.display === 'block' || computerBoxChoices[1].style.display === 'block' || computerBoxChoices[2].style.display === 'block' || computerBoxChoices[3].style.display === 'block' || computerBoxChoices[4].style.display === 'block') {
+    computerBoxChoices[0].style.display = 'none';
+    computerBoxChoices[1].style.display = 'none';
+    computerBoxChoices[2].style.display = 'none';
+    computerBoxChoices[3].style.display = 'none';
+    computerBoxChoices[4].style.display = 'none';
+  }
 }
 
 function displayRoundWinner() {
