@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
         alert('You clicked How to play!');
       } else {
         let gameType = this.getAttribute("data-type");
-				runGame(gameType) + determineRoundWinner();
+				runGame(gameType); determineRoundWinner();
       }
 
     })
@@ -112,19 +112,24 @@ function displayRandomComputerGesture() {
 
 
 /**
- * calculates the outcome for when rock is chosen
+ * calculates the outcome for when rock is chosen then updates score if you win, lose, or draw. (modal to be added here!)
  */
 function rockMatchPatterns() {
   if (playerBoxChoices[0].style.display === 'block' && computerBoxChoices[2].style.display === 'block') {
-    alert('You Win :D');
-  } else if (playerBoxChoices[0].style.display === 'block' && computerBoxChoices[3].style.display === 'block') {
+    incrementWin();
     alert('You win :D');
+  } else if (playerBoxChoices[0].style.display === 'block' && computerBoxChoices[3].style.display === 'block') {
+    incrementWin();
+    alert('You Win :D');
   } else if (playerBoxChoices[0].style.display === 'block' && computerBoxChoices[1].style.display === 'block') {
-    alert('You Lose :( ');
+    incrementLose();
+    alert('You Lose :(')
   } else if (playerBoxChoices[0].style.display === 'block' && computerBoxChoices[4].style.display === 'block') {
+    incrementLose();
     alert('You Lose :(');
   } else if (playerBoxChoices[0].style.display === 'block' && computerBoxChoices[0].style.display === 'block') {
-    alert('Its a Draw!');
+    incrementDraw();
+    alert('Its a draw!')
   }
 }
 
@@ -133,14 +138,19 @@ function rockMatchPatterns() {
  */
 function paperMatchPatterns() {
   if (playerBoxChoices[1].style.display === 'block' && computerBoxChoices[0].style.display === 'block') {
+    incrementWin();
     alert('You Win :D');
   } else if (playerBoxChoices[1].style.display === 'block' && computerBoxChoices[4].style.display === 'block') {
+    incrementWin();
     alert('You win :D');
   } else if (playerBoxChoices[1].style.display === 'block' && computerBoxChoices[2].style.display === 'block') {
+    incrementLose();
     alert('You Lose :( ');
   } else if (playerBoxChoices[1].style.display === 'block' && computerBoxChoices[3].style.display === 'block') {
+    incrementLose();
     alert('You Lose :(');
   } else if (playerBoxChoices[1].style.display === 'block' && computerBoxChoices[1].style.display === 'block') {
+    incrementDraw();
     alert('Its a Draw!');
   }
 }
@@ -150,14 +160,19 @@ function paperMatchPatterns() {
  */
 function scissorsMatchPatterns() {
   if (playerBoxChoices[2].style.display === 'block' && computerBoxChoices[1].style.display === 'block') {
+    incrementWin();
     alert('You Win :D');
   } else if (playerBoxChoices[2].style.display === 'block' && computerBoxChoices[3].style.display === 'block') {
+    incrementWin();
     alert('You win :D');
   } else if (playerBoxChoices[2].style.display === 'block' && computerBoxChoices[0].style.display === 'block') {
+    incrementLose();
     alert('You Lose :( ');
   } else if (playerBoxChoices[2].style.display === 'block' && computerBoxChoices[4].style.display === 'block') {
+    incrementLose();
     alert('You Lose :(');
   } else if (playerBoxChoices[2].style.display === 'block' && computerBoxChoices[2].style.display === 'block') {
+    incrementDraw();
     alert('Its a Draw!');
   }
 }
@@ -167,14 +182,19 @@ function scissorsMatchPatterns() {
  */
 function lizardMatchPatterns() {
   if (playerBoxChoices[3].style.display === 'block' && computerBoxChoices[1].style.display === 'block') {
+    incrementWin();
     alert('You Win :D');
   } else if (playerBoxChoices[3].style.display === 'block' && computerBoxChoices[4].style.display === 'block') {
+    incrementWin();
     alert('You win :D');
   } else if (playerBoxChoices[3].style.display === 'block' && computerBoxChoices[0].style.display === 'block') {
+    incrementLose();
     alert('You Lose :( ');
   } else if (playerBoxChoices[3].style.display === 'block' && computerBoxChoices[2].style.display === 'block') {
+    incrementLose();
     alert('You Lose :(');
   } else if (playerBoxChoices[3].style.display === 'block' && computerBoxChoices[3].style.display === 'block') {
+    incrementDraw();
     alert('Its a Draw!');
   }
 }
@@ -184,14 +204,19 @@ function lizardMatchPatterns() {
  */
 function spockMatchPatterns() {
   if (playerBoxChoices[4].style.display === 'block' && computerBoxChoices[0].style.display === 'block') {
+    incrementWin();
     alert('You Win :D');
   } else if (playerBoxChoices[4].style.display === 'block' && computerBoxChoices[2].style.display === 'block') {
+    incrementWin();
     alert('You win :D');
   } else if (playerBoxChoices[4].style.display === 'block' && computerBoxChoices[1].style.display === 'block') {
+    incrementLose();
     alert('You Lose :( ');
   } else if (playerBoxChoices[4].style.display === 'block' && computerBoxChoices[3].style.display === 'block') {
+    incrementLose();
     alert('You Lose :(');
   } else if (playerBoxChoices[4].style.display === 'block' && computerBoxChoices[4].style.display === 'block') {
+    incrementDraw();
     alert('Its a Draw!');
   }
 }
@@ -241,18 +266,18 @@ function displayRoundWinner() {
 
 function incrementWin() {
   let oldScore = parseInt(document.getElementById("win").innerText);
-  document.getElementById("score").innerText = ++oldScore;
+  document.getElementById("win").innerText = ++oldScore;
 
 }
 
 function incrementLose() {
   let oldScore = parseInt(document.getElementById("lose").innerText);
-  document.getElementById("score").innerText = ++oldScore;
+  document.getElementById("lose").innerText = ++oldScore;
 }
 
 function incrementDraw() {
   let oldScore = parseInt(document.getElementById("draw").innerText);
-  document.getElementById("score").innerText = ++oldScore;
+  document.getElementById("draw").innerText = ++oldScore;
 }
 
 function incrementStage() {
