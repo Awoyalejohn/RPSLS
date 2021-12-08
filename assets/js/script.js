@@ -280,9 +280,9 @@ function incrementDraw() {
   document.getElementById("draw").innerText = ++oldScore;
 }
 
-function incrementStage() {
-  let oldScore = parseInt(document.getElementById("stage").innerText);
-  document.getElementById("score").innerText = ++oldScore;
+function incrementRound() {
+  let oldScore = parseInt(document.getElementById("round").innerText);
+  document.getElementById("round").innerText = ++oldScore;
 }
 
 function gameoverCondition() {
