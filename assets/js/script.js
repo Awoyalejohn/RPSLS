@@ -1,6 +1,8 @@
 let playerBoxChoices = document.getElementsByClassName('player hidden');
 
-let computerBoxChoices =document.getElementsByClassName('computer hidden')
+let computerBoxChoices =document.getElementsByClassName('computer hidden');
+
+let myModals = document.getElementsByClassName('modals');
 
 
 // Wait for the DOM to finish loading before running the game
@@ -12,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
   for (let button of buttons) {
     button.addEventListener('click', function() {
       if (this.getAttribute('data-type') === 'how to play') {
-        alert('You clicked How to play!');
+        displayHowToPlay();
       } else {
         let gameType = this.getAttribute("data-type");
 				runGame(gameType); determineRoundWinner();
@@ -23,7 +25,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
   }
 
-
+let closeButton = document.getElementsByClassName('close');
+closeButton[0].addEventListener('click',closeHowToPlayModal);
 
  
 
@@ -33,8 +36,19 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+/**
+ * displays how to play modal
+*/
+function displayHowToPlay() {
+  myModals[0].children[0].style.display = 'block';  
+}
 
-
+/**
+ * closes how to play modal
+*/
+function closeHowToPlayModal() {
+  myModals[0].children[0].style.display = 'none';
+}
 
 
 

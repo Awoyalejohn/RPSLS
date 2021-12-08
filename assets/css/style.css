@@ -117,7 +117,7 @@ img.hidden {
 
 /* how to play modal background */
 .how-to-play-modal {
-  display: block;
+  display: none;
   position: fixed;
   z-index: 1;
   padding-top: 1em;
