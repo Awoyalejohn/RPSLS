@@ -25,11 +25,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
   }
 
-let closeButton = document.getElementsByClassName('close');
-closeButton[0].addEventListener('click',closeHowToPlayModal);
+let closeButtons = document.getElementsByClassName('close');
+for (closeButton of closeButtons) {
+  closeButton.addEventListener('click',closeModals);
+}
+
 
 let closeBackground = myModals[0].children[0];
-closeBackground.addEventListener('click',closeHowToPlayModal);
+closeBackground.addEventListener('click',closeModals);
  
 
 
@@ -48,7 +51,7 @@ function displayHowToPlay() {
 /**
  * closes how to play modal
 */
-function closeHowToPlayModal() {
+function closeModals() {
   myModals[0].children[0].style.display = 'none';
 }
 
