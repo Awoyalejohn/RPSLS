@@ -16,8 +16,10 @@ document.addEventListener('DOMContentLoaded', function() {
       if (this.getAttribute('data-type') === 'how to play') {
         displayHowToPlay();
       } else if (this.getAttribute('data-type') === 'restart game') {
-        restartGame()
-      } else {
+        restartGame();
+      } else if (this.getAttribute('data-type') === 'play music') {
+        playAudio();
+      }else {
         let gameType = this.getAttribute("data-type");
 				runGame(gameType); determineRoundWinner();
       }
@@ -66,6 +68,17 @@ function restartGame() {
   myModals[0].children[5].style.display = 'none';
   myModals[0].children[6].style.display = 'none';
 }
+
+
+function playAudio() {
+  let audio = document.getElementById('music');
+  if (audio.paused) {
+    audio.play()
+  } else {
+    audio.pause()
+  }
+}
+
 
 
 /**
