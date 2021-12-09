@@ -28,6 +28,8 @@ document.addEventListener('DOMContentLoaded', function() {
 let closeButton = document.getElementsByClassName('close');
 closeButton[0].addEventListener('click',closeHowToPlayModal);
 
+let closeBackground = myModals[0].children[0];
+closeBackground.addEventListener('click',closeHowToPlayModal);
  
 
 
