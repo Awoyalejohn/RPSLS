@@ -96,7 +96,11 @@ function displayRoundLose() {
  * displays the round draw modal
 */
 function displayRoundDraw() {
-  myModals[0].children[3].style.display = 'block';  
+  if (document.getElementById("draw").innerText === '5') {
+    myModals[0].children[6].style.display = 'block';
+  } else {
+    myModals[0].children[3].style.display = 'block'; 
+  }  
 }
 
 
