@@ -69,7 +69,7 @@ function closeModals() {
 
 
 /**
- * displays the round win modal
+ * displays the round win & game win modals
 */
 function displayRoundWin() {
   if (document.getElementById("win").innerText === '5') {
@@ -81,10 +81,14 @@ function displayRoundWin() {
 
 
 /**
- * displays the round lose modal
+ * displays the round lose & game lose modals
 */
 function displayRoundLose() {
-  myModals[0].children[2].style.display = 'block';  
+  if (document.getElementById("lose").innerText === '5') {
+    myModals[0].children[5].style.display = 'block';
+  } else {
+    myModals[0].children[2].style.display = 'block'; 
+  }  
 }
 
 
