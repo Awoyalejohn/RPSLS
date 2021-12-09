@@ -194,19 +194,19 @@ function rockMatchPatterns() {
 function paperMatchPatterns() {
   if (playerBoxChoices[1].style.display === 'block' && computerBoxChoices[0].style.display === 'block') {
     incrementWin();
-    alert('You Win :D');
+    displayRoundWin();
   } else if (playerBoxChoices[1].style.display === 'block' && computerBoxChoices[4].style.display === 'block') {
     incrementWin();
-    alert('You win :D');
+    displayRoundWin();
   } else if (playerBoxChoices[1].style.display === 'block' && computerBoxChoices[2].style.display === 'block') {
     incrementLose();
-    alert('You Lose :( ');
+    displayRoundLose();
   } else if (playerBoxChoices[1].style.display === 'block' && computerBoxChoices[3].style.display === 'block') {
     incrementLose();
-    alert('You Lose :(');
+    displayRoundLose();
   } else if (playerBoxChoices[1].style.display === 'block' && computerBoxChoices[1].style.display === 'block') {
     incrementDraw();
-    alert('Its a Draw!');
+    displayRoundDraw();
   }
 }
 
@@ -216,19 +216,19 @@ function paperMatchPatterns() {
 function scissorsMatchPatterns() {
   if (playerBoxChoices[2].style.display === 'block' && computerBoxChoices[1].style.display === 'block') {
     incrementWin();
-    alert('You Win :D');
+    displayRoundWin();
   } else if (playerBoxChoices[2].style.display === 'block' && computerBoxChoices[3].style.display === 'block') {
     incrementWin();
-    alert('You win :D');
+    displayRoundWin();
   } else if (playerBoxChoices[2].style.display === 'block' && computerBoxChoices[0].style.display === 'block') {
     incrementLose();
-    alert('You Lose :( ');
+    displayRoundLose();
   } else if (playerBoxChoices[2].style.display === 'block' && computerBoxChoices[4].style.display === 'block') {
     incrementLose();
-    alert('You Lose :(');
+    displayRoundLose();
   } else if (playerBoxChoices[2].style.display === 'block' && computerBoxChoices[2].style.display === 'block') {
     incrementDraw();
-    alert('Its a Draw!');
+    displayRoundDraw();
   }
 }
 
@@ -238,19 +238,19 @@ function scissorsMatchPatterns() {
 function lizardMatchPatterns() {
   if (playerBoxChoices[3].style.display === 'block' && computerBoxChoices[1].style.display === 'block') {
     incrementWin();
-    alert('You Win :D');
+    displayRoundWin();
   } else if (playerBoxChoices[3].style.display === 'block' && computerBoxChoices[4].style.display === 'block') {
     incrementWin();
-    alert('You win :D');
+    displayRoundWin();
   } else if (playerBoxChoices[3].style.display === 'block' && computerBoxChoices[0].style.display === 'block') {
     incrementLose();
-    alert('You Lose :( ');
+    displayRoundLose();
   } else if (playerBoxChoices[3].style.display === 'block' && computerBoxChoices[2].style.display === 'block') {
     incrementLose();
-    alert('You Lose :(');
+    displayRoundLose();
   } else if (playerBoxChoices[3].style.display === 'block' && computerBoxChoices[3].style.display === 'block') {
     incrementDraw();
-    alert('Its a Draw!');
+    displayRoundDraw();
   }
 }
 
@@ -260,19 +260,19 @@ function lizardMatchPatterns() {
 function spockMatchPatterns() {
   if (playerBoxChoices[4].style.display === 'block' && computerBoxChoices[0].style.display === 'block') {
     incrementWin();
-    alert('You Win :D');
+    displayRoundWin();
   } else if (playerBoxChoices[4].style.display === 'block' && computerBoxChoices[2].style.display === 'block') {
     incrementWin();
-    alert('You win :D');
+    displayRoundWin();
   } else if (playerBoxChoices[4].style.display === 'block' && computerBoxChoices[1].style.display === 'block') {
     incrementLose();
-    alert('You Lose :( ');
+    displayRoundLose();
   } else if (playerBoxChoices[4].style.display === 'block' && computerBoxChoices[3].style.display === 'block') {
     incrementLose();
-    alert('You Lose :(');
+    displayRoundLose();
   } else if (playerBoxChoices[4].style.display === 'block' && computerBoxChoices[4].style.display === 'block') {
     incrementDraw();
-    alert('Its a Draw!');
+    displayRoundDraw();
   }
 }
 
