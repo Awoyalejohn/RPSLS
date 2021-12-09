@@ -169,7 +169,7 @@ img.hidden {
   background-color: rgba(0,0,0,0.4);
 }
 
-.round-win-content .round-lose-content .round-draw-content {
+.round-win-content, .round-lose-content, .round-draw-content {
   background-color: lightblue;
   margin: auto;
   padding: 1em;
