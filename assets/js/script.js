@@ -93,7 +93,7 @@ function displayRoundLose() {
 
 
 /**
- * displays the round draw modal
+ * displays the round draw & game draw modals
 */
 function displayRoundDraw() {
   if (document.getElementById("draw").innerText === '5') {
@@ -298,6 +298,7 @@ function determineRoundWinner() {
   scissorsMatchPatterns();
   lizardMatchPatterns();
   spockMatchPatterns();
+  incrementRound()
 }
 
 /**
@@ -327,10 +328,6 @@ function clearcomputerBoxChoice() {
   }
 }
 
-function displayRoundWinner() {
-  
-}
-
 function incrementWin() {
   let oldScore = parseInt(document.getElementById("win").innerText);
   document.getElementById("win").innerText = ++oldScore;
@@ -351,13 +348,3 @@ function incrementRound() {
   let oldScore = parseInt(document.getElementById("round").innerText);
   document.getElementById("round").innerText = ++oldScore;
 }
-
-function gameoverCondition() {
-  
-}
-
-function displayGameoverWinner() {
-  
-}
-
-
