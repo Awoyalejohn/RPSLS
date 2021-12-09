@@ -31,8 +31,16 @@ for (closeButton of closeButtons) {
 }
 
 
-let closeBackground = myModals[0].children[0];
-closeBackground.addEventListener('click',closeModals);
+ let closeBackgroundHow = document.getElementsByClassName('how-to-play-modal');
+ closeBackgroundHow[0].addEventListener('click', closeModals);
+ 
+ let closeBackgroundRounds = document.getElementsByClassName('round-modal');
+ for (closeBackgroundRound of closeBackgroundRounds ) {
+   closeBackgroundRound.addEventListener('click',closeModals);
+ }
+ 
+ 
+ 
  
 
 
@@ -53,6 +61,10 @@ function displayHowToPlay() {
 */
 function closeModals() {
   myModals[0].children[0].style.display = 'none';
+  myModals[0].children[1].style.display = 'none';
+  myModals[0].children[2].style.display = 'none';
+  myModals[0].children[3].style.display = 'none';  
+  
 }
 
 
