@@ -53,6 +53,30 @@ function closeHowToPlayModal() {
 }
 
 
+/**
+ * displays the round win modal
+*/
+function displayRoundWin() {
+  myModals[0].children[1].style.display = 'block';  
+}
+
+
+/**
+ * displays the round lose modal
+*/
+function displayRoundLose() {
+  myModals[0].children[2].style.display = 'block';  
+}
+
+
+/**
+ * displays the round draw modal
+*/
+function displayRoundDraw() {
+  myModals[0].children[3].style.display = 'block';  
+}
+
+
 
 /**
  * displays rock in player box
@@ -133,19 +157,19 @@ function displayRandomComputerGesture() {
 function rockMatchPatterns() {
   if (playerBoxChoices[0].style.display === 'block' && computerBoxChoices[2].style.display === 'block') {
     incrementWin();
-    alert('You win :D');
+    displayRoundWin();
   } else if (playerBoxChoices[0].style.display === 'block' && computerBoxChoices[3].style.display === 'block') {
     incrementWin();
-    alert('You Win :D');
+    displayRoundWin();
   } else if (playerBoxChoices[0].style.display === 'block' && computerBoxChoices[1].style.display === 'block') {
     incrementLose();
-    alert('You Lose :(')
+    displayRoundLose();
   } else if (playerBoxChoices[0].style.display === 'block' && computerBoxChoices[4].style.display === 'block') {
     incrementLose();
-    alert('You Lose :(');
+    displayRoundLose();
   } else if (playerBoxChoices[0].style.display === 'block' && computerBoxChoices[0].style.display === 'block') {
     incrementDraw();
-    alert('Its a draw!')
+    displayRoundDraw();
   }
 }
 
