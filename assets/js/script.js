@@ -15,6 +15,8 @@ document.addEventListener('DOMContentLoaded', function() {
     button.addEventListener('click', function() {
       if (this.getAttribute('data-type') === 'how to play') {
         displayHowToPlay();
+      } else if (this.getAttribute('data-type') === 'restart game') {
+        restartGame()
       } else {
         let gameType = this.getAttribute("data-type");
 				runGame(gameType); determineRoundWinner();
@@ -26,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
 let closeButtons = document.getElementsByClassName('close');
-for (closeButton of closeButtons) {
+for (let closeButton of closeButtons) {
   closeButton.addEventListener('click',closeModals);
 }
 
@@ -47,6 +49,23 @@ for (closeButton of closeButtons) {
 
 })
 
+
+
+function restartGame() {
+  for (let playerBoxChoice of playerBoxChoices) {
+    playerBoxChoice.style.display = 'none';
+  }
+  for (let computerBoxChoice of computerBoxChoices) {
+    computerBoxChoice.style.display = 'none';
+  }
+  document.getElementById("win").innerText = '0';
+  document.getElementById("lose").innerText = '0';
+  document.getElementById("draw").innerText = '0';
+  document.getElementById("round").innerText = '0';
+  myModals[0].children[4].style.display = 'none';
+  myModals[0].children[5].style.display = 'none';
+  myModals[0].children[6].style.display = 'none';
+}
 
 
 /**
