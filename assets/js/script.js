@@ -19,7 +19,9 @@ document.addEventListener('DOMContentLoaded', function() {
         restartGame();
       } else if (this.getAttribute('data-type') === 'play music') {
         playAudio();
-      }else {
+      } else if (this.getAttribute('data-type') === 'facebook' || this.getAttribute('data-type') === 'twitter' || this.getAttribute('data-type') === 'instagram' || this.getAttribute('data-type') === 'youtube') {
+        //do nothing!
+      } else {
         let gameType = this.getAttribute("data-type");
 				runGame(gameType); determineRoundWinner();
       }
