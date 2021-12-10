@@ -63,7 +63,7 @@ function restartGame() {
   document.getElementById("win").innerText = '0';
   document.getElementById("lose").innerText = '0';
   document.getElementById("draw").innerText = '0';
-  document.getElementById("round").innerText = '0';
+  document.getElementById("round").innerText = '1';
   myModals[0].children[4].style.display = 'none';
   myModals[0].children[5].style.display = 'none';
   myModals[0].children[6].style.display = 'none';
