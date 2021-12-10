@@ -7,6 +7,7 @@
 body{
   background-color: #ffcc80;
   font-family: 'Secular One', sans-serif;
+  margin-top: auto;
 }
 
 /* makes header logo centered and removes underline*/
@@ -15,6 +16,8 @@ h1, a {
   text-decoration: none;
   color: blue;
   font-family: 'Catamaran', sans-serif;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .controls-area {
@@ -22,7 +25,7 @@ h1, a {
 }
 
 .player-icon {
-  margin-top: 4em;
+  margin-top: 3em;
   float: left;
   margin-right: 6.5em;
   padding-bottom: 2em;
@@ -33,7 +36,7 @@ h1, a {
 .computer-icon {
   margin-top: 1em;
  float: left;
-  margin-right: 5em;
+  margin-right: 1em;
   margin-left: 1em;
 }
 
@@ -44,7 +47,7 @@ h1, a {
   width: 6em;
   border: solid;
   float: right;
-  margin-top: 2em;
+  margin-top: 1em;
   margin-right: 1em;
 }
 
@@ -53,7 +56,7 @@ h1, a {
   width: 6em;
   border: solid;
   float: right;
-  margin-top: 0.145em;
+  margin-top: auto;
   margin-right: 1em;
 }
 
@@ -75,7 +78,7 @@ h1, a {
 .gesture-select-area {
   text-align: center;
   margin-top: -1rem;
-  margin-bottom: -3rem;
+  margin-bottom: -3.5rem;
 }
 
 .button-rock, .button-paper, .button-scissors, .button-lizard, .button-spock {
