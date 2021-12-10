@@ -12,6 +12,7 @@ body{
 h1, a {
   text-align: center;
   text-decoration: none;
+  color: blue;
 }
 
 .controls-area {
@@ -79,6 +80,9 @@ h1, a {
   margin-left: 1rem;
   margin-left: 1rem;
   font-size: 3rem;
+  border: solid;
+  background-color: blue;
+  color: orange;
 }
 
 footer {
