@@ -9,6 +9,7 @@ It has extra hand gestures for  lizard and spock. that lowered the chance of gre
 ### Existing Features
 
 - __The Header__
+
  - Featured at the top of the page
  - Has a hyper link to the homepage
  - Users can use it another way to reset the page
