@@ -16,4 +16,17 @@ It has extra hand gestures for  lizard and spock. that lowered the chance of gre
 - __Font style used for the website title text is Catamaran.__
  
  ![Header](https://github.com/Awoyalejohn/RPSLS/blob/main/assets/readme-files/heade-image.PNG)
+ 
+ ### The controls area
+
+- __Featured below the header.__
+- __The controls area gives access to the how to play button, restart button and music button.__
+- __When the user clicks on the how to play button a modal will pop up and give a brief explanation of how you play the game. The modal can be closed by clicking anywhere on the screen.__
+- __The restart button clears all the values on the page and starts the game again..__
+- __The logo is white with a game controller icon next beside which contrasts well with the blue background.__
+- __The music button plays the audio file put inside the game.__
+ 
+ ![Controls area image](https://github.com/Awoyalejohn/RPSLS/blob/main/assets/readme-files/footer-image.PNG)
+ 
+ 
 
