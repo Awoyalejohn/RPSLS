@@ -79,7 +79,19 @@ It has extra hand gestures for  lizard and spock. that lowered the chance of gre
 - __Gamelose  modal displays the player lost the game if  player loses 5 rounds__
 - __Game draw modal displays whenever the player draws in 5 rounds__
  
- ![the modals](...)
+![the modals](https://github.com/Awoyalejohn/RPSLS/blob/main/assets/readme-files/round-win.PNG)
+ 
+![the modals](https://github.com/Awoyalejohn/RPSLS/blob/main/assets/readme-files/round-lose.PNG)
+ 
+![the modals](https://github.com/Awoyalejohn/RPSLS/blob/main/assets/readme-files/round-draw.PNG)
+  
+![the modals](https://github.com/Awoyalejohn/RPSLS/blob/main/assets/readme-files/game-win.PNG)
+   
+![the modals](https://github.com/Awoyalejohn/RPSLS/blob/main/assets/readme-files/game-lose.PNG)
+    
+
+     
+  
  
  
 
