@@ -50,5 +50,14 @@ It has extra hand gestures for  lizard and spock. that lowered the chance of gre
  
  ![score area image](https://github.com/Awoyalejohn/RPSLS/blob/main/assets/readme-files/score-image.PNG)
  
+ ### The hand gesture area
+
+- __Featured below the score__
+- __This is where they will select their choice button when going against the computer.__
+- __The buttons have an oranger hover effect when the mouse is hovered above it__
+- __This makes it easier for users to pick the choice that they want.__
+ 
+ ![hand gesture area](https://github.com/Awoyalejohn/RPSLS/blob/main/assets/readme-files/hand-gestures-image.PNG)
+ 
  
 
