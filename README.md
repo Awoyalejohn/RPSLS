@@ -68,5 +68,18 @@ It has extra hand gestures for  lizard and spock. that lowered the chance of gre
  
  ![footer area](https://github.com/Awoyalejohn/RPSLS/blob/main/assets/readme-files/footer-image.PNG)
  
+ ### The modals 
+
+- __A group of seven modals that will pop up depending on the condition__
+- __The how to modal shows how to play the game and can be closed by clicking the x  button or on background__
+- __Round win modal displays whenever the player wins a round__
+- __Round lose modal displays whenever the player wins a round __
+- __Round draw modal displays whenever the player wins a round __
+- __Game win  modal displays the player won the game if the player wins 5 rounds.__
+- __Gamelose  modal displays the player lost the game if  player loses 5 rounds__
+- __Game draw modal displays whenever the player draws in 5 rounds__
+ 
+ ![the modals](...)
+ 
  
 
