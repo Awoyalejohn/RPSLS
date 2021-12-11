@@ -199,7 +199,8 @@ function displayRandomComputerGesture() {
 }
 
 /**
- * calculates the outcome for when rock is chosen then updates score if you win, lose, or draw. (modal to be added here!)
+ * calculates the outcome for when rock is chosen 
+ * then updates score if win, lose, or draw occurs.
  */
 function rockMatchPatterns() {
   if (playerBoxChoices[0].style.display === 'block' 
@@ -227,6 +228,7 @@ function rockMatchPatterns() {
 
 /**
  * calculates the outcome for when paper is chosen
+ * then updates score if win, lose, or draw occurs.
  */
 function paperMatchPatterns() {
   if (playerBoxChoices[1].style.display === 'block' 
@@ -254,6 +256,7 @@ function paperMatchPatterns() {
 
 /**
  * calculates the outcome for when scissors is chosen
+ * then updates score if win, lose, or draw occurs.
  */
 function scissorsMatchPatterns() {
   if (playerBoxChoices[2].style.display === 'block' 
@@ -281,6 +284,7 @@ function scissorsMatchPatterns() {
 
 /**
  * calculates the outcome for when lizard is chosen
+ * then updates score if win, lose, or draw occurs.
  */
 function lizardMatchPatterns() {
   if (playerBoxChoices[3].style.display === 'block' 
@@ -308,6 +312,7 @@ function lizardMatchPatterns() {
 
 /**
  * calculates the outcome for when spock is chosen
+ * then updates score if win, lose, or draw occurs.
  */
 function spockMatchPatterns() {
   if (playerBoxChoices[4].style.display === 'block' 
