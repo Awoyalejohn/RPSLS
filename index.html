@@ -22,17 +22,17 @@
     <!--the main content of the website-->
     <main>
       <!--website controls area for the how to play, restart and music buttons-->
-      <section class="controls-area">
+      <div class="controls-area">
         <button data-type="how to play" class="play-button">How To Play</button>
         <button data-type="restart game" class="restart-button">Restart Game</button>
         <button data-type="play music" class="music-button">
           <audio src="assets/audio/optimism.mp3" id="music"></audio>
           <i class="fas fa-music"></i>
         </button>
-      </section>
+      </div>
       <!--game area for the player icon, computer icon, player box, computer box with hand gesture images from font awesome-->
-      <section class="game-area">
-        <article class="player">
+      <div class="game-area">
+        <div class="player">
           <div class="player-icon">
             <p><i class="fas fa-user"></i>Player:</p>
           </div>
@@ -44,9 +44,9 @@
             <img src="assets/images/hand-lizard-solid.svg" class="lizard player hidden" alt="player lizard hand gesture">
             <img src="assets/images/hand-spock-solid.svg" class="spock player hidden" alt="player spock hand gesture">
           </div>
-        </article>
+        </div>
         
-        <article class="computer">
+        <div class="computer">
           <div class="computer-icon">
             <p><i class="fas fa-desktop"></i>Computer:</p> 
           </div>
@@ -57,20 +57,20 @@
             <img src="assets/images/hand-lizard-solid.svg" class="lizard computer hidden" alt="computer lizard hand gesture">
             <img src="assets/images/hand-spock-solid.svg" class="spock computer hidden" alt="computer spock hand gesture">
           </div>
-        </article>
-      </section>
+        </div>
+      </div>
       <!--stage area for round scores. code from love maths tutorial-->
-      <section class="stage-area">
+      <div class="stage-area">
         <p>Round: <span id="round">1</span></p>
-      </section>
+      </div>
       <!--score area for win, lose, and draw scores. code from love maths tutorial-->
-      <section class="score-area">
+      <div class="score-area">
         <p class="scores">Win: <span id="win">0</span></p>
         <p class="scores">Lose: <span id="lose">0</span></p>
         <p class="scores">Draw: <span id="draw">0</span></p>
-      </section>
+      </div>
       <!--gesture select area for hand gesture buttons.code from font awesome-->
-      <section class="gesture-select-area">
+      <div class="gesture-select-area">
         <div class="hand-gesture-row1">
           <button data-type="rock" class="choice button-rock">
             <i class="far fa-hand-rock"></i>
@@ -91,14 +91,14 @@
             <i class="far fa-hand-spock"></i>
           </button>
         </div>
-      </section>
+      </div>
       <!--modals section with modals that are hidden and will pop up with JavaScript. code from w3schools-->
-      <section class="modals">
+      <div class="modals">
         <!--how to play modal that will pop up when how to play button is clicked-->
         <div class="how-to-play-modal">
           <div class="how-to-play-content">
             <span class="close">&times;</span>
-            <h1>How to play</h1>
+            <p>How to play</p>
             <p>
               This is a version of the classic game; rock, paper, scissors.
               It adds hand gestures for lizard and spock.
@@ -159,33 +159,29 @@
             <button data-type="restart game" class="restart-button">Restart Game</button>
           </div>
         </div>
-      </section>
+      </div>
     </main>
     <!--footer section with social media icons and copright -->
     <footer>
       <!--social media icons link to their websites on a new tab. code from love running tutorial-->
-      <div class="socialmedia">
-        <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="visit our Facebook page (opens in a new tab)">
-          <button data-type="facebook" class="facebook">
-            <i class="fab fa-facebook-square"></i>
-          </button>
-        </a>
-        <a href="https://twitter.com/" target="_blank" rel="noopener" aria-label="visit our Twitter page (opens in a new tab)">
-          <button data-type="twitter" class="twitter">
-            <i class="fab fa-twitter-square"></i>
-          </button>
-        </a>
-        <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="visit our Instagram page (opens in a new tab)">
-          <button data-type="instagram" class="instagram">
-            <i class="fab fa-instagram-square"></i>
-          </button>
-        </a>
-        <a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="visit our YouTube page (opens in a new tab)">
-          <button data-type="youtube" class="youtube">
-            <i class="fab fa-youtube-square"></i>
-          </button>
-        </a>
-      </div>
+      <ul class="social-media">
+        <li>
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener" 
+          aria-label="visit our Facebook page (opens in a new tab)"><i class="fab fa-facebook-square"></i></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/" target="_blank" rel="noopener" 
+          aria-label="visit our Twitter page (opens in a new tab)"><i class="fab fa-twitter-square"></i></a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/" target="_blank" rel="noopener" 
+          aria-label="visit our YouTube page (opens in a new tab)"><i class="fab fa-youtube-square"></i></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener" 
+          aria-label="visit our Instagram page (opens in a new tab)"><i class="fab fa-instagram-square"></i></a>
+        </li>
+      </ul>
       <div class="copyright">
         <p>&copy; 2021 RPSLS</p>
       </div>

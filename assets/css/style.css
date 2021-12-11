@@ -134,6 +134,23 @@ footer {
   margin-top: 4.5rem;
 }
 
+.social-media > li {
+  display: inline;
+  text-align: center;
+  padding: 5%;
+}
+
+.social-media i {
+  font-size: 160%;
+  color: #ffffff;
+}
+
+.social-media i:hover {
+  font-size: 160%;
+  color: #ff8000;
+}
+
+
 .facebook, .twitter, .instagram, .youtube {
   font-size: 1.5rem;
   margin-left: 1rem;
@@ -491,7 +508,6 @@ img.hidden {
     margin-top: 1.5em;
     float: left;
     margin-right: 1em;
-    padding: auto;
     margin-left: 1em;
     
   }
@@ -501,7 +517,6 @@ img.hidden {
     float: left;
     margin-right: 1em;
     margin-left: 1em;
-    padding: auto;
   }
 
   .player-box {

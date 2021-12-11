@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
         //do nothing!
       } else {
         let gameType = this.getAttribute("data-type");
-				runGame(gameType); 
+        runGame(gameType); 
         determineRoundWinner();
       }
     })
@@ -91,8 +91,7 @@ function closeModals() {
   myModals[0].children[0].style.display = 'none';
   myModals[0].children[1].style.display = 'none';
   myModals[0].children[2].style.display = 'none';
-  myModals[0].children[3].style.display = 'none';  
-  
+  myModals[0].children[3].style.display = 'none';
 }
 
 /**
@@ -173,7 +172,7 @@ function displayPlayerSpock() {
 */
 function runGame(gameType) {
 
-	// displays the player's choice in player box 
+// displays the player's choice in player box 
 	if (gameType === "rock") {
 		displayPlayerRock()
 	} else if (gameType === "paper") {
