@@ -1,13 +1,10 @@
+// Global variables for player images, computer images and modals
 let playerBoxChoices = document.getElementsByClassName('player hidden');
-
 let computerBoxChoices =document.getElementsByClassName('computer hidden');
-
 let myModals = document.getElementsByClassName('modals');
-
 
 // Wait for the DOM to finish loading before running the game
 // Get the button elemnts and add event listeners to them
-
 document.addEventListener('DOMContentLoaded', function() {
   let buttons = document.getElementsByTagName('button');
 
@@ -19,42 +16,39 @@ document.addEventListener('DOMContentLoaded', function() {
         restartGame();
       } else if (this.getAttribute('data-type') === 'play music') {
         playAudio();
-      } else if (this.getAttribute('data-type') === 'facebook' || this.getAttribute('data-type') === 'twitter' || this.getAttribute('data-type') === 'instagram' || this.getAttribute('data-type') === 'youtube') {
+      } else if (this.getAttribute('data-type') === 'facebook' 
+      || this.getAttribute('data-type') === 'twitter' 
+      || this.getAttribute('data-type') === 'instagram' 
+      || this.getAttribute('data-type') === 'youtube') {
         //do nothing!
       } else {
         let gameType = this.getAttribute("data-type");
-				runGame(gameType); determineRoundWinner();
+				runGame(gameType); 
+        determineRoundWinner();
       }
-
     })
-
-
   }
 
-let closeButtons = document.getElementsByClassName('close');
-for (let closeButton of closeButtons) {
-  closeButton.addEventListener('click',closeModals);
-}
+  //adds event listener to close modals with the x buttion
+  let closeButtons = document.getElementsByClassName('close');
+  for (let closeButton of closeButtons) {
+    closeButton.addEventListener('click',closeModals);
+  }
 
+  //adds event listenet to close how to play modal with backgrouns
+  let closeBackgroundHow = document.getElementsByClassName('how-to-play-modal');
+  closeBackgroundHow[0].addEventListener('click', closeModals);
 
- let closeBackgroundHow = document.getElementsByClassName('how-to-play-modal');
- closeBackgroundHow[0].addEventListener('click', closeModals);
- 
- let closeBackgroundRounds = document.getElementsByClassName('round-modal');
- for (closeBackgroundRound of closeBackgroundRounds ) {
-   closeBackgroundRound.addEventListener('click',closeModals);
- }
- 
- 
- 
- 
-
-
-
+  //adds event listener to close round modals with background
+  let closeBackgroundRounds = document.getElementsByClassName('round-modal');
+  for (let closeBackgroundRound of closeBackgroundRounds ) {
+    closeBackgroundRound.addEventListener('click',closeModals);
+  }
 })
 
-
-
+/**
+* resets all the values to restart game
+*/
 function restartGame() {
   for (let playerBoxChoice of playerBoxChoices) {
     playerBoxChoice.style.display = 'none';
@@ -71,7 +65,9 @@ function restartGame() {
   myModals[0].children[6].style.display = 'none';
 }
 
-
+/**
+* plays and pauses audio file
+*/
 function playAudio() {
   let audio = document.getElementById('music');
   if (audio.paused) {
@@ -80,8 +76,6 @@ function playAudio() {
     audio.pause()
   }
 }
-
-
 
 /**
  * displays how to play modal
@@ -101,7 +95,6 @@ function closeModals() {
   
 }
 
-
 /**
  * displays the round win & game win modals
 */
@@ -112,7 +105,6 @@ function displayRoundWin() {
     myModals[0].children[1].style.display = 'block'; 
   }  
 }
-
 
 /**
  * displays the round lose & game lose modals
@@ -125,7 +117,6 @@ function displayRoundLose() {
   }  
 }
 
-
 /**
  * displays the round draw & game draw modals
 */
@@ -136,8 +127,6 @@ function displayRoundDraw() {
     myModals[0].children[3].style.display = 'block'; 
   }  
 }
-
-
 
 /**
  * displays rock in player box
@@ -179,12 +168,12 @@ function displayPlayerSpock() {
   playerBoxChoices[4].style.display = 'block';
 }
 
-
+/**
+* checks the data types to decide which hand gestures to display
+*/
 function runGame(gameType) {
 
 	// displays the player's choice in player box 
-
-
 	if (gameType === "rock") {
 		displayPlayerRock()
 	} else if (gameType === "paper") {
@@ -199,11 +188,9 @@ function runGame(gameType) {
 		alert(`Unknown hand gesture ${gameType}`);
 		throw `Unknown hand gesture ${gameType}, aborting!`;
 	}
-
 }
 
 // displays the computers's choice in player box 
-
 function displayRandomComputerGesture() {
   clearcomputerBoxChoice()
   let randomNum =Math.floor(Math.random() * computerBoxChoices.length);
@@ -211,24 +198,28 @@ function displayRandomComputerGesture() {
   
 }
 
-
 /**
  * calculates the outcome for when rock is chosen then updates score if you win, lose, or draw. (modal to be added here!)
  */
 function rockMatchPatterns() {
-  if (playerBoxChoices[0].style.display === 'block' && computerBoxChoices[2].style.display === 'block') {
+  if (playerBoxChoices[0].style.display === 'block' 
+  && computerBoxChoices[2].style.display === 'block') {
     incrementWin();
     displayRoundWin();
-  } else if (playerBoxChoices[0].style.display === 'block' && computerBoxChoices[3].style.display === 'block') {
+  } else if (playerBoxChoices[0].style.display === 'block' 
+  && computerBoxChoices[3].style.display === 'block') {
     incrementWin();
     displayRoundWin();
-  } else if (playerBoxChoices[0].style.display === 'block' && computerBoxChoices[1].style.display === 'block') {
+  } else if (playerBoxChoices[0].style.display === 'block' 
+  && computerBoxChoices[1].style.display === 'block') {
     incrementLose();
     displayRoundLose();
-  } else if (playerBoxChoices[0].style.display === 'block' && computerBoxChoices[4].style.display === 'block') {
+  } else if (playerBoxChoices[0].style.display === 'block' 
+  && computerBoxChoices[4].style.display === 'block') {
     incrementLose();
     displayRoundLose();
-  } else if (playerBoxChoices[0].style.display === 'block' && computerBoxChoices[0].style.display === 'block') {
+  } else if (playerBoxChoices[0].style.display === 'block' 
+  && computerBoxChoices[0].style.display === 'block') {
     incrementDraw();
     displayRoundDraw();
   }
@@ -238,19 +229,24 @@ function rockMatchPatterns() {
  * calculates the outcome for when paper is chosen
  */
 function paperMatchPatterns() {
-  if (playerBoxChoices[1].style.display === 'block' && computerBoxChoices[0].style.display === 'block') {
+  if (playerBoxChoices[1].style.display === 'block' 
+  && computerBoxChoices[0].style.display === 'block') {
     incrementWin();
     displayRoundWin();
-  } else if (playerBoxChoices[1].style.display === 'block' && computerBoxChoices[4].style.display === 'block') {
+  } else if (playerBoxChoices[1].style.display === 'block' 
+  && computerBoxChoices[4].style.display === 'block') {
     incrementWin();
     displayRoundWin();
-  } else if (playerBoxChoices[1].style.display === 'block' && computerBoxChoices[2].style.display === 'block') {
+  } else if (playerBoxChoices[1].style.display === 'block' 
+  && computerBoxChoices[2].style.display === 'block') {
     incrementLose();
     displayRoundLose();
-  } else if (playerBoxChoices[1].style.display === 'block' && computerBoxChoices[3].style.display === 'block') {
+  } else if (playerBoxChoices[1].style.display === 'block' 
+  && computerBoxChoices[3].style.display === 'block') {
     incrementLose();
     displayRoundLose();
-  } else if (playerBoxChoices[1].style.display === 'block' && computerBoxChoices[1].style.display === 'block') {
+  } else if (playerBoxChoices[1].style.display === 'block' 
+  && computerBoxChoices[1].style.display === 'block') {
     incrementDraw();
     displayRoundDraw();
   }
@@ -260,19 +256,24 @@ function paperMatchPatterns() {
  * calculates the outcome for when scissors is chosen
  */
 function scissorsMatchPatterns() {
-  if (playerBoxChoices[2].style.display === 'block' && computerBoxChoices[1].style.display === 'block') {
+  if (playerBoxChoices[2].style.display === 'block' 
+  && computerBoxChoices[1].style.display === 'block') {
     incrementWin();
     displayRoundWin();
-  } else if (playerBoxChoices[2].style.display === 'block' && computerBoxChoices[3].style.display === 'block') {
+  } else if (playerBoxChoices[2].style.display === 'block' 
+  && computerBoxChoices[3].style.display === 'block') {
     incrementWin();
     displayRoundWin();
-  } else if (playerBoxChoices[2].style.display === 'block' && computerBoxChoices[0].style.display === 'block') {
+  } else if (playerBoxChoices[2].style.display === 'block' 
+  && computerBoxChoices[0].style.display === 'block') {
     incrementLose();
     displayRoundLose();
-  } else if (playerBoxChoices[2].style.display === 'block' && computerBoxChoices[4].style.display === 'block') {
+  } else if (playerBoxChoices[2].style.display === 'block' 
+  && computerBoxChoices[4].style.display === 'block') {
     incrementLose();
     displayRoundLose();
-  } else if (playerBoxChoices[2].style.display === 'block' && computerBoxChoices[2].style.display === 'block') {
+  } else if (playerBoxChoices[2].style.display === 'block' 
+  && computerBoxChoices[2].style.display === 'block') {
     incrementDraw();
     displayRoundDraw();
   }
@@ -282,19 +283,24 @@ function scissorsMatchPatterns() {
  * calculates the outcome for when lizard is chosen
  */
 function lizardMatchPatterns() {
-  if (playerBoxChoices[3].style.display === 'block' && computerBoxChoices[1].style.display === 'block') {
+  if (playerBoxChoices[3].style.display === 'block' 
+  && computerBoxChoices[1].style.display === 'block') {
     incrementWin();
     displayRoundWin();
-  } else if (playerBoxChoices[3].style.display === 'block' && computerBoxChoices[4].style.display === 'block') {
+  } else if (playerBoxChoices[3].style.display === 'block' 
+  && computerBoxChoices[4].style.display === 'block') {
     incrementWin();
     displayRoundWin();
-  } else if (playerBoxChoices[3].style.display === 'block' && computerBoxChoices[0].style.display === 'block') {
+  } else if (playerBoxChoices[3].style.display === 'block' 
+  && computerBoxChoices[0].style.display === 'block') {
     incrementLose();
     displayRoundLose();
-  } else if (playerBoxChoices[3].style.display === 'block' && computerBoxChoices[2].style.display === 'block') {
+  } else if (playerBoxChoices[3].style.display === 'block' 
+  && computerBoxChoices[2].style.display === 'block') {
     incrementLose();
     displayRoundLose();
-  } else if (playerBoxChoices[3].style.display === 'block' && computerBoxChoices[3].style.display === 'block') {
+  } else if (playerBoxChoices[3].style.display === 'block' 
+  && computerBoxChoices[3].style.display === 'block') {
     incrementDraw();
     displayRoundDraw();
   }
@@ -304,19 +310,24 @@ function lizardMatchPatterns() {
  * calculates the outcome for when spock is chosen
  */
 function spockMatchPatterns() {
-  if (playerBoxChoices[4].style.display === 'block' && computerBoxChoices[0].style.display === 'block') {
+  if (playerBoxChoices[4].style.display === 'block' 
+  && computerBoxChoices[0].style.display === 'block') {
     incrementWin();
     displayRoundWin();
-  } else if (playerBoxChoices[4].style.display === 'block' && computerBoxChoices[2].style.display === 'block') {
+  } else if (playerBoxChoices[4].style.display === 'block' 
+  && computerBoxChoices[2].style.display === 'block') {
     incrementWin();
     displayRoundWin();
-  } else if (playerBoxChoices[4].style.display === 'block' && computerBoxChoices[1].style.display === 'block') {
+  } else if (playerBoxChoices[4].style.display === 'block' 
+  && computerBoxChoices[1].style.display === 'block') {
     incrementLose();
     displayRoundLose();
-  } else if (playerBoxChoices[4].style.display === 'block' && computerBoxChoices[3].style.display === 'block') {
+  } else if (playerBoxChoices[4].style.display === 'block' 
+  && computerBoxChoices[3].style.display === 'block') {
     incrementLose();
     displayRoundLose();
-  } else if (playerBoxChoices[4].style.display === 'block' && computerBoxChoices[4].style.display === 'block') {
+  } else if (playerBoxChoices[4].style.display === 'block' 
+  && computerBoxChoices[4].style.display === 'block') {
     incrementDraw();
     displayRoundDraw();
   }
@@ -336,11 +347,15 @@ function determineRoundWinner() {
 }
 
 /**
- * empties player box to a new hand gesture chosen
+ * checks if anything is displayed in player box then replaces it with new hand gesture
  */
 function clearPlayerBoxChoice() {
   
-  if (playerBoxChoices[0].style.display === 'block' || playerBoxChoices[1].style.display === 'block' || playerBoxChoices[2].style.display === 'block' || playerBoxChoices[3].style.display === 'block' || playerBoxChoices[4].style.display === 'block') {
+  if (playerBoxChoices[0].style.display === 'block' 
+  || playerBoxChoices[1].style.display === 'block' 
+  || playerBoxChoices[2].style.display === 'block' 
+  || playerBoxChoices[3].style.display === 'block' 
+  || playerBoxChoices[4].style.display === 'block') {
     playerBoxChoices[0].style.display = 'none';
     playerBoxChoices[1].style.display = 'none';
     playerBoxChoices[2].style.display = 'none';
@@ -350,10 +365,14 @@ function clearPlayerBoxChoice() {
 }
 
 /**
- * empties computer box to a new hand gesture chosen
+ * checks if anything is displayed in computer box then replaces it with new hand gesture
  */
 function clearcomputerBoxChoice() {
-  if (computerBoxChoices[0].style.display === 'block' || computerBoxChoices[1].style.display === 'block' || computerBoxChoices[2].style.display === 'block' || computerBoxChoices[3].style.display === 'block' || computerBoxChoices[4].style.display === 'block') {
+  if (computerBoxChoices[0].style.display === 'block' 
+  || computerBoxChoices[1].style.display === 'block' 
+  || computerBoxChoices[2].style.display === 'block' 
+  || computerBoxChoices[3].style.display === 'block' 
+  || computerBoxChoices[4].style.display === 'block') {
     computerBoxChoices[0].style.display = 'none';
     computerBoxChoices[1].style.display = 'none';
     computerBoxChoices[2].style.display = 'none';
@@ -362,22 +381,34 @@ function clearcomputerBoxChoice() {
   }
 }
 
+/**
+* Gets the current win from the DOM and increments it by 1
+*/
 function incrementWin() {
   let oldScore = parseInt(document.getElementById("win").innerText);
   document.getElementById("win").innerText = ++oldScore;
 
 }
 
+/**
+* Gets the current lose from the DOM and increments it by 1
+*/
 function incrementLose() {
   let oldScore = parseInt(document.getElementById("lose").innerText);
   document.getElementById("lose").innerText = ++oldScore;
 }
 
+/**
+* Gets the current draw from the DOM and increments it by 1
+*/
 function incrementDraw() {
   let oldScore = parseInt(document.getElementById("draw").innerText);
   document.getElementById("draw").innerText = ++oldScore;
 }
 
+/**
+* Gets the current draw from the DOM and increments it by 1
+*/
 function incrementRound() {
   let oldScore = parseInt(document.getElementById("round").innerText);
   document.getElementById("round").innerText = ++oldScore;
