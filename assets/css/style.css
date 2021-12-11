@@ -473,5 +473,160 @@ img.hidden {
   }
 }
 
+/*media queries for small screens and laptops at least 780px*/
+@media only screen and (min-width: 780px) {
+  .player-icon {
+    margin-top: 1.5em;
+    float: left;
+    margin-right: 1em;
+    padding: auto;
+    margin-left: 1em;
+    
+  }
+  
+  .computer-icon {
+    margin-top: 1.5em;
+    float: left;
+    margin-right: 1em;
+    margin-left: 1em;
+    padding: auto;
+  }
+
+  .player-box {
+    height: 7em;
+    width: 7em;
+    margin-bottom: auto;
+    margin-top: auto;
+    margin-right: auto;
+  }
+  
+  .computer-box {
+    height: 7em;
+    width: 7em;
+    margin-bottom: auto;
+    margin-right: auto;
+  }
+
+  
+  .player {
+    float: left;
+    margin-left: 10%;
+  }
+
+  .computer {
+    float:right;
+    margin-right: 10%;
+  }
+
+  .hand-gesture-row1{
+    display: inline;
+  }
+
+  .hand-gesture-row2{
+    display: inline;
+  }
+
+  .stage-area {
+    margin-top: 30%;
+  }
+
+}
+
+/*media queries for small screens and laptops at least 800px*/
+@media only screen and (min-width: 800px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  .player-box {
+    height: 8em;
+    width: 8em;
+  }
+  
+  .computer-box {
+    height: 8em;
+    width: 8em;
+  }
+
+  .button-rock, .button-paper, .button-scissors, .button-lizard, .button-spock {
+    font-size: 4rem;
+    width: 5rem;
+  }
+
+  .stage-area {
+    margin-bottom: 3rem;
+  }
+  
+  .score-area {
+    margin-bottom: 2rem;
+  }
+
+}
+
+/*media queries for desktops and large screens at least 1025px*/
+@media only screen and (min-width: 1025px) {
+  .player-box {
+    height: 9em;
+    width: 9em;
+  }
+  
+  .computer-box {
+    height: 9em;
+    width: 9em;
+  }
+
+  .player-icon {
+    margin-top: 15%;
+
+  }
+  
+  /*sends computer icon to the right*/
+  .computer-icon {
+    margin-top: 15%;
+
+  }
+
+  .button-rock, .button-paper, .button-scissors, .button-lizard, .button-spock {
+    font-size: 4rem;
+    width: 5rem;
+  }
+
+  .stage-area {
+    margin-bottom: 3rem;
+  }
+  
+  .score-area {
+    margin-bottom: 2rem;
+  }
+
+}
+
+/*media queries for desktops and large screens at least 1100px*/
+@media only screen and (min-width: 1100px) {
+  .player {
+    margin-left: 15%;
+  }
+
+  .computer {
+    margin-right: 15%;
+  }
+
+}
+
+/*media queries for desktops and large screens at least 1200px*/
+@media only screen and (min-width: 1200px) {
+  .player {
+    margin-left: 20%;
+  }
+
+  .computer {
+    margin-right: 20%;
+  }
+
+  .stage-area {
+    margin-top: 20%;
+  }
+
+}
 
 
