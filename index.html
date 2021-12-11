@@ -1,173 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!--font awesome-->
-  <script src="https://kit.fontawesome.com/45f2ada809.js" crossorigin="anonymous"></script>
-
-  <!--google fonts-->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@900&family=Secular+One&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="assets/css/style.css">
-  <title>RPSLS</title>
-</head>
-<body>
   <head>
-    <!--website logo that links back to homepage-->
-    <a href="index.html"><h1><i class="fas fa-gamepad"></i> RPSLS</h1></a>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--font awesome-->
+    <script src="https://kit.fontawesome.com/45f2ada809.js" crossorigin="anonymous"></script>
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@900&family=Secular+One&display=swap" rel="stylesheet">
+    <!--stylesheet-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>RPSLS</title>
   </head>
-
-  <main>
-    <section class="controls-area">
-      <button data-type="how to play" class="play-button">How To Play</button>
-      <button data-type="restart game" class="restart-button">Restart Game</button>
-      <button data-type="play music" class="music-button">
-        <audio src="assets/audio/optimism.mp3" id="music" type="audio/mp3"></audio>
-        <i class="fas fa-music"></i>
-      </button>
-    </section>
-
-    <section class="game-area">
-      <article class="player">
-        <div class="player-icon">
-          <p><i class="fas fa-user"></i>Player:</p>
+  <body>
+    <header>
+      <!--website logo that links back to homepage-->
+      <a href="index.html"><h1 title="Rock, Paper, Scissors, Lizard, Spock"><i class="fas fa-gamepad"></i> RPSLS</h1></a>
+    </header>
+    <!--the main content of the website-->
+    <main>
+      <!--website controls area for the how to play, restart and music buttons-->
+      <section class="controls-area">
+        <button data-type="how to play" class="play-button">How To Play</button>
+        <button data-type="restart game" class="restart-button">Restart Game</button>
+        <button data-type="play music" class="music-button">
+          <audio src="assets/audio/optimism.mp3" id="music" type="audio/mp3"></audio>
+          <i class="fas fa-music"></i>
+        </button>
+      </section>
+      <!--game area for the player icon, computer icon, player box, computer box with hand gesture images from font awesome-->
+      <section class="game-area">
+        <article class="player">
+          <div class="player-icon">
+            <p><i class="fas fa-user"></i>Player:</p>
+          </div>
+          <div class="player-box">
+            <!--images have the hidden class to hide them until called with javascipt-->
+            <img src="assets/images/hand-rock-solid.svg" class="rock player hidden" alt="player rock hand gesture">
+            <img src="assets/images/hand-paper-solid.svg" class="paper player hidden" alt="player paper hand gesture">
+            <img src="assets/images/hand-scissors-solid.svg" class="scissors player hidden" alt="player scissors hand gesture">
+            <img src="assets/images/hand-lizard-solid.svg" class="lizard player hidden" alt="player lizard hand gesture">
+            <img src="assets/images/hand-spock-solid.svg" class="spock player hidden" alt="player spock hand gesture">
+          </div>
+        </article>
+        
+        <article class="computer">
+          <div class="computer-icon">
+            <p><i class="fas fa-desktop"></i>Computer:</p> 
+          </div>
+          <div class="computer-box">
+            <img src="assets/images/hand-rock-solid.svg" class="rock computer hidden" alt="computer rock hand gesture">
+            <img src="assets/images/hand-paper-solid.svg" class="paper computer hidden" alt="computer paper hand gesture">
+            <img src="assets/images/hand-scissors-solid.svg" class="scissors computer hidden" alt="computer scissors hand gesture">
+            <img src="assets/images/hand-lizard-solid.svg" class="lizard computer hidden" alt="computer lizard hand gesture">
+            <img src="assets/images/hand-spock-solid.svg" class="spock computer hidden" alt="computer spock hand gesture">
+          </div>
+        </article>
+      </section>
+      <!--stage area for round scores. code from love maths tutorial-->
+      <section class="stage-area">
+        <p>Round: <span id="round">1</span></p>
+      </section>
+      <!--score area for win, lose, and draw scores. code from love maths tutorial-->
+      <section class="score-area">
+        <p class="scores">Win: <span id="win">0</span></p>
+        <p class="scores">Lose: <span id="lose">0</span></p>
+        <p class="scores">Draw: <span id="draw">0</span></p>
+      </section>
+      <!--gesture select area for hand gesture buttons.code from font awesome-->
+      <section class="gesture-select-area">
+        <div class="hand-gesture-row1">
+          <button data-type="rock" class="choice button-rock">
+            <i class="far fa-hand-rock"></i>
+          </button>
+          <button data-type="paper" class="choice button-paper">
+            <i class="far fa-hand-paper"></i>
+          </button>
+          <button data-type="scissors" class="choice button-scissors">
+            <i class="far fa-hand-scissors"></i>
+          </button>
         </div>
-        <div class="player-box">
-          <img src="assets/images/hand-rock-solid.svg" class="rock player hidden" alt="rock hand gesture">
-          <img src="assets/images/hand-paper-solid.svg" class="paper player hidden" alt="paper hand gesture">
-          <img src="assets/images/hand-scissors-solid.svg" class="scissors player hidden" alt="scissors hand gesture">
-          <img src="assets/images/hand-lizard-solid.svg" class="lizard player hidden" alt="lizard hand gesture">
-          <img src="assets/images/hand-spock-solid.svg" class="spock player hidden" alt="spock hand gesture">
+        <!--lizard and spock hand gestures on a separate row-->
+        <div class="hand-gesture-row2">
+          <button data-type="lizard" class="choice button-lizard">
+            <i class="far fa-hand-lizard"></i>
+          </button>
+          <button data-type="spock" class="choice button-spock">
+            <i class="far fa-hand-spock"></i>
+          </button>
         </div>
-      </article>
-
-      <article class="computer"></article>
-        <div class="computer-icon">
-          <p><i class="fas fa-desktop"></i>Computer:</p> 
+      </section>
+      <!--modals section with modals that are hidden and will pop up with JavaScript. code from w3schools-->
+      <section class="modals">
+        <!--how to play modal that will pop up when how to play button is clicked-->
+        <div class="how-to-play-modal">
+          <div class="how-to-play-content">
+            <span class="close">&times;</span>
+            <h1>How to play</h1>
+            <p>
+              This is a version of the classic game; rock, paper, scissors.
+              It adds hand gestures for lizard and spock.
+              Which causes the game to have more outcomes
+              and reduces the chance of drawing with your opponent.
+              Game is still very simple, just select one of the hand gestures
+              below and the computer will responds with its own choice.
+              The winner will be declared based on these outcomes:
+              Scissors cuts Paper, Paper covers Rock,
+              Rock crushes Lizard, Lizard poisons Spock,
+              Spock smashes Scissors, Scissors decapitates Lizard,
+              Lizard eats Paper, Paper disproves Spock,
+              Spock vaporizes Rock, (and as it always has) Rock crushes Scissors.
+              You win the game if you won in 5 rounds, lose if you lost in 5 rounds, and draw if
+              you drew in 5 rounds. Which ever happens first.
+            </p>
+          </div>
         </div>
-        <div class="computer-box">
-          <img src="assets/images/hand-rock-solid.svg" class="rock computer hidden" alt="rock hand gesture">
-          <img src="assets/images/hand-paper-solid.svg" class="paper computer hidden" alt="paper hand gesture">
-          <img src="assets/images/hand-scissors-solid.svg" class="scissors computer hidden" alt="scissors hand gesture">
-          <img src="assets/images/hand-lizard-solid.svg" class="lizard computer hidden" alt="lizard hand gesture">
-          <img src="assets/images/hand-spock-solid.svg" class="spock computer hidden" alt="spock hand gesture">
+        <!--round win modal that will pop up when a round is won. w3 schools emojis used-->
+        <div class="round-win round-modal">
+          <div class="round-win-content">
+            <span class="close">&times;</span>
+            <p>You won this round! &#128578;</p>
+          </div>
         </div>
-    </section>
-
-    <section class="stage-area">
-      <p>Round: <span id="round">1</span></p>
-    </section>
-
-    <section class="score-area">
-      <p class="scores">Win: <span id="win">0</span></p>
-      <p class="scores">Lose: <span id="lose">0</span></p>
-      <p class="scores">Draw: <span id="draw">0</span></p>
-    </section>
-    
-    <section class="gesture-select-area">
-      <div class="hand-gesture-row1">
-        <button data-type="rock" class="choice button-rock"><i class="far fa-hand-rock"></i></button>
-        <button data-type="paper" class="choice button-paper"><i class="far fa-hand-paper"></i></button>
-        <button data-type="scissors" class="choice button-scissors"><i class="far fa-hand-scissors"></i></button>
+        <!--round lose modal that will pop up when a round is lost. w3 schools emojis used-->
+        <div class="round-lose round-modal">
+          <div class="round-lose-content">
+            <span class="close">&times;</span>
+            <p>You lost this round! &#128577;</p>
+          </div>
+        </div>
+        <!--round draw modal that will pop up when a round is a draw. w3 schools emojis used-->
+        <div class="round-draw round-modal">
+          <div class="round-draw-content">
+            <span class="close">&times;</span>
+            <p>This round is a draw! &#128528;</p>
+          </div>
+        </div>
+        <!--game win modal that will pop up when the game is won-->
+        <div class="game-win game-modal">
+          <div class="game-win-content">
+            <p>Game over! You won the game! &#128526;</p>
+            <button data-type="restart game" class="restart-button">Restart Game</button>
+          </div>
+        </div>
+        <!--game lose modal that will pop up when the game is lost-->
+        <div class="game-lose game-modal">
+          <div class="game-lose-content">
+            <p>Game over! You lost the game! &#128557;</p>
+            <button data-type="restart game" class="restart-button">Restart Game</button>
+          </div>
+        </div>
+        <!--game draw modal that will pop up when the game ends with a draw-->
+        <div class="game-draw game-modal">
+          <div class="game-draw-content">
+            <p>Game over! Game ends with a draw! &#128562;</p>
+            <button data-type="restart game" class="restart-button">Restart Game</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--footer section with social media icons and copright -->
+    <footer>
+      <!--social media icons link to their websites on a new tab. code from love running tutorial-->
+      <div class="socialmedia">
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="visit our Facebook page (opens in a new tab)">
+          <button data-type="facebook" class="facebook">
+            <i class="fab fa-facebook-square"></i>
+          </button>
+        </a>
+        <a href="https://twitter.com/" target="_blank" rel="noopener" aria-label="visit our Twitter page (opens in a new tab)">
+          <button data-type="twitter" class="twitter">
+            <i class="fab fa-twitter-square"></i>
+          </button>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="visit our Instagram page (opens in a new tab)">
+          <button data-type="instagram" class="instagram">
+            <i class="fab fa-instagram-square"></i>
+          </button>
+        </a>
+        <a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="visit our YouTube page (opens in a new tab)">
+          <button data-type="youtube" class="youtube">
+            <i class="fab fa-youtube-square"></i>
+          </button>
+        </a>
       </div>
-
-      <div class="hand-gesture-row2">
-        <button data-type="lizard" class="choice button-lizard"><i class="far fa-hand-lizard"></i> </button>
-        <button data-type="spock" class="choice button-spock"><i class="far fa-hand-spock"></i></button>
+      <div class="copyright">
+        <p>&copy; 2021 RPSLS</p>
       </div>
-    </section>
-    <section class="modals">
-      <div class="how-to-play-modal">
-        <div class="how-to-play-content">
-          <span class="close">&times;</span>
-          <h1>How to play</h1>
-          <p>This is a version of the classic game; rock, paper, scissors.
-             It adds hand gestures for lizard and spock.
-             Which causes the game to have more outcomes
-             and reduces the chance of drawing with your opponent.
-             Game is still very simple, just select one of the hand gestures
-             below and the computer will responds with its own choice.
-             The winner will be declared based on these outcomes:
-             Scissors cuts Paper,
-             Paper covers Rock,
-             Rock crushes Lizard,
-             Lizard poisons Spock,
-             Spock smashes Scissors,
-             Scissors decapitates Lizard,
-             Lizard eats Paper,
-             Paper disproves Spock,
-             Spock vaporizes Rock,
-             (and as it always has) Rock crushes Scissors.</p>
-        </div>
-      </div>
-
-      <div class="round-win round-modal">
-        <div class="round-win-content">
-          <span class="close">&times;</span>
-          <p>You won this round! &#128578;</p>
-        </div>
-      </div>
-
-      <div class="round-lose round-modal">
-        <div class="round-lose-content">
-          <span class="close">&times;</span>
-          <p>You lost this round! &#128577;</p>
-        </div>
-      </div>
-
-      <div class="round-draw round-modal">
-        <div class="round-draw-content">
-          <span class="close">&times;</span>
-          <p>This round is a draw! &#128528;</p>
-        </div>
-      </div>
-
-      <div class="game-win game-modal">
-        <div class="game-win-content">
-          <p>Game over! You won the game! &#128526;</p>
-          <button data-type="restart game" class="restart-button">Restart Game</button>
-        </div>
-      </div>
-
-      <div class="game-lose game-modal">
-        <div class="game-lose-content">
-          <p>Game over! You lost the game! &#128557;</p>
-          <button data-type="restart game" class="restart-button">Restart Game</button>
-        </div>
-      </div>
-
-      <div class="game-draw game-modal">
-        <div class="game-draw-content">
-          <p>Game over! Game ends with a draw! &#128562;</p>
-          <button data-type="restart game" class="restart-button">Restart Game</button>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="socialmedia">
-      <a href="https://www.facebook.com/" target="_blank" rel="noopener" 
-      aria-label="visit our Facebook page (opens in a new tab)"><button data-type="facebook" class="facebook"><i class="fab fa-facebook-square"></i></button></a>
-      <a href="https://twitter.com/" target="_blank" rel="noopener" 
-      aria-label="visit our Twitter page (opens in a new tab)"><button data-type="twitter" class="twitter"><i class="fab fa-twitter-square"></i></button></a>
-      <a href="https://www.instagram.com/" target="_blank" rel="noopener" 
-      aria-label="visit our Instagram page (opens in a new tab)"><button data-type="instagram" class="instagram"><i class="fab fa-instagram-square"></i></button></a>
-      <a href="https://www.youtube.com/" target="_blank" rel="noopener" 
-      aria-label="visit our YouTube page (opens in a new tab)"><button data-type="youtube" class="youtube"><i class="fab fa-youtube-square"></i></button></a>
-    </div>
-    <div class="copyright">
-      <p>&copy; 2021 RPSLS</p>
-    </div>
-
-  </footer>
-
-
+    </footer>
+  <!--javaScript file-->  
   <script src="assets/js/script.js"></script>
-</body>
+  </body>
 </html>
