@@ -1,34 +1,32 @@
+/*styles the whole document*/
 * {
-
   border: none;
   box-sizing: border-box;
 }
 
+/*styles the body*/
 body{
   background-color: #000060;
   font-family: 'Secular One', sans-serif;
   margin-top: auto;
 }
 
-
-
-
-
-
+/*styles the play, restart and music buttons*/
 .play-button,.restart-button, .music-button {
   border: solid #ffffff;
   background-color: #000060;
   color: #ffffff;
   border-radius: 5px;
 }
-
+ 
+/*adds a mouse hover effect to play, restart and music buttons*/
 .play-button:hover, .restart-button:hover, .music-button:hover {
   border: solid #ff8000;
   color: #ff8000;
 }
 
 
-/* makes header logo centered and removes underline*/
+/* styles header logo, centers and removes underline*/
 h1, a {
   text-align: center;
   text-decoration: none;
@@ -38,6 +36,7 @@ h1, a {
   margin-bottom: auto;
 }
 
+/*adds a mouse hover to header*/
 h1:hover {
   color: #ff8000;
 }
@@ -50,6 +49,7 @@ p {
   text-align: center;
 }
 
+/*sends player icon to the left*/
 .player-icon {
   margin-top: 3em;
   float: left;
@@ -59,6 +59,7 @@ p {
   
 }
 
+/*sends computer icon to the right*/
 .computer-icon {
   margin-top: 1em;
  float: left;
@@ -66,8 +67,7 @@ p {
   margin-left: 1em;
 }
 
-
-
+/*sends playerbox to the right*/
 .player-box {
   height: 6em;
   width: 6em;
@@ -78,6 +78,7 @@ p {
   border-radius: 5px;
 }
 
+/*sends computerbox to the right*/
 .computer-box {
   height: 6em;
   width: 6em;
@@ -171,9 +172,7 @@ img.hidden {
   display: none;
 }
 
-
-
-/* how to play modal background */
+/* modals background code gotten form w3sshools*/
 .how-to-play-modal {
   display: none;
   position: fixed;
@@ -223,7 +222,6 @@ img.hidden {
   cursor: pointer;
 }
 
-
 .round-modal {
   display: none;
   position: fixed;
@@ -249,7 +247,6 @@ img.hidden {
 .round-win-content p, .round-lose-content p, .round-draw-content p {
   color: #000000;
 }
-
 
 .game-modal {
   display: none;
