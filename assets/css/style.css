@@ -600,7 +600,6 @@ img.hidden {
 
   }
   
-  /*sends computer icon to the right*/
   .computer-icon {
     margin-top: 15%;
 
@@ -617,6 +616,32 @@ img.hidden {
   
   .score-area {
     margin-bottom: 2rem;
+  }
+
+  .how-to-play-content {
+    padding: 1em;
+    border: 1px solid #888;
+    width: 60%;
+    font-size: 1rem;
+  }
+
+
+  .round-win-content, .round-lose-content, .round-draw-content {
+    width: 60%;
+    font-size: 1rem;
+  }
+  
+  .round-win-content p, .round-lose-content p, .round-draw-content p {
+    color: #000000;
+  }
+  
+  .game-win-content, .game-lose-content, .game-draw-content {
+    width: 60%;
+    font-size: 1rem;
+  }
+  
+  .game-win-content p, .game-lose-content p, .game-draw-content p{
+    color: #000000;
   }
 
 }
@@ -718,6 +743,31 @@ img.hidden {
   .button-rock, .button-paper, .button-scissors, .button-lizard, .button-spock {
     font-size: 5rem;
     width: 6rem;
+  }
+
+  .how-to-play-content {
+    padding: 1em;
+    border: 1px solid #888;
+    width: 50%;
+    font-size: 1.5rem;
+  }
+
+  .round-win-content, .round-lose-content, .round-draw-content {
+    width: 50%;
+    font-size: 1.5rem;
+  }
+  
+  .round-win-content p, .round-lose-content p, .round-draw-content p {
+    color: #000000;
+  }
+  
+  .game-win-content, .game-lose-content, .game-draw-content {
+    width: 50%;
+    font-size: 1.5rem;
+  }
+  
+  .game-win-content p, .game-lose-content p, .game-draw-content p{
+    color: #000000;
   }
 
 }
