@@ -59,5 +59,14 @@ It has extra hand gestures for  lizard and spock. that lowered the chance of gre
  
  ![hand gesture area](https://github.com/Awoyalejohn/RPSLS/blob/main/assets/readme-files/hand-gestures-image.PNG)
  
+  ### The footer area
+
+- __Featured below hand gesture area__
+- __Shows the social media icons to Twitter, facebook, instagram and youtube__
+- __All are links that will open a new tab when clicked__
+- __The copyright info is also at the very bottom of the site.__
+ 
+ ![footer area](https://github.com/Awoyalejohn/RPSLS/blob/main/assets/readme-files/hand-gestures-image.PNG)
+ 
  
 
