@@ -629,4 +629,108 @@ img.hidden {
 
 }
 
+/*media queries for extra large screens tvs at least 1500px*/
+@media only screen and (min-width: 1500px) {
+  .player {
+    margin-left: 25%;
+  }
+
+  .computer {
+    margin-right: 25%;
+  }
+
+  .player-box {
+    height: 10em;
+    width: 10em;
+  }
+  
+  .computer-box {
+    height: 10em;
+    width: 10em;
+  }
+
+  .play-button,.restart-button, .music-button {
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+
+  .button-rock, .button-paper, .button-scissors, .button-lizard, .button-spock {
+    font-size: 5rem;
+    width: 6rem;
+  }
+
+}
+
+/*media queries for extra large screens tvs at least 1800px*/
+@media only screen and (min-width: 1800px) {
+  .player {
+    margin-left: 30%;
+  }
+
+  .computer {
+    margin-right: 30%;
+  }
+
+  .stage-area {
+    margin-top: 15%;
+  }
+}
+
+/*media queries for extra large screens tvs at least 2200px*/
+@media only screen and (min-width: 2200px) {
+  .player-box {
+    height: 11em;
+    width: 11em;
+  }
+  
+  .computer-box {
+    height: 11em;
+    width: 11em;
+  }
+
+  .button-rock, .button-paper, .button-scissors, .button-lizard, .button-spock {
+    font-size: 6rem;
+    width: 7rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .play-button,.restart-button, .music-button {
+    font-size: 1rem;
+  
+  }
+
+  .game-area p, .stage-area p, .score-area p {
+    font-size: 1.5rem;
+  }
+
+  .facebook, .twitter, .instagram, .youtube {
+    font-size: 2rem;
+  }
+
+  .copyright {
+    font-size: 1rem;
+
+  }
+
+  .gesture-select-area {
+    margin-bottom: 8%;
+  }
+}
+
+/*media queries for extra large screens tvs at least 2400px*/
+@media only screen and (min-width: 2400px) {
+  .gesture-select-area {
+    margin-bottom: 9%;
+  }
+}
+
+/*media queries for extra large screens tvs at least 2600px*/
+@media only screen and (min-width: 2600px) {
+  .gesture-select-area {
+    margin-bottom: 10%;
+  }
+}
 
