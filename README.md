@@ -43,5 +43,12 @@ It has extra hand gestures for  lizard and spock. that lowered the chance of gre
  
  ![round area image](https://github.com/Awoyalejohn/RPSLS/blob/main/assets/readme-files/round%20image.PNG)
  
+   ### The score area
+
+- __Featured below the roundarea__
+- __This keeps track of the wins, losses, and draws that occur every round__
+ 
+ ![score area image](https://github.com/Awoyalejohn/RPSLS/blob/main/assets/readme-files/score-image.PNG)
+ 
  
 
