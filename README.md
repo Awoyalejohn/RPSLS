@@ -9,12 +9,12 @@ It has extra hand gestures for  lizard and spock. that lowered the chance of gre
 ### Existing Features
 
 - __The Header__
- -Featured at the top of the page
- -Has a hyper link to the homepage
- -Users can use it another way to reset the page
- -The header has a blue background colour.
- -The logo is white with a game controller icon next beside which contrasts well with the blue background
- -Font style used for the website title text is Catamaran.
+ - Featured at the top of the page
+ - Has a hyper link to the homepage
+ - Users can use it another way to reset the page
+ - The header has a blue background colour.
+ - The logo is white with a game controller icon next beside which contrasts well with the blue background
+ - Font style used for the website title text is Catamaran.
  
  ![Header](https://github.com/Awoyalejohn/RPSLS/blob/main/assets/readme-files/heade-image.PNG)
 
