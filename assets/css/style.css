@@ -1,3 +1,4 @@
+/*for mobile phones 480px or less
 /*styles the whole document*/
 * {
   border: none;
@@ -62,7 +63,7 @@ p {
 /*sends computer icon to the right*/
 .computer-icon {
   margin-top: 1em;
- float: left;
+  float: left;
   margin-right: 1em;
   margin-left: 1em;
 }
@@ -273,3 +274,204 @@ img.hidden {
 .game-win-content p, .game-lose-content p, .game-draw-content p{
   color: #000000;
 }
+
+/*media queries for mobile phones at least 335px*/
+@media only screen and (min-width: 335px) {
+  .computer-icon {
+    margin-right: 3em;
+  }
+}
+
+/*media queries for mobile phones moto g4 & S5 at least 360px*/
+@media only screen and (min-width: 360px) {
+  .computer-icon {
+    margin-right: 4em;
+  }
+
+  .controls-area {
+    margin-bottom: 1rem;
+  }
+
+  .stage-area {
+    margin-top: 18rem;
+  }
+
+  .gesture-select-area {
+    margin-bottom: -2rem;
+  }
+}
+
+/*media queries for mobile phones at least 367px*/
+@media only screen and (min-width: 367px) {
+  .computer-icon {
+    margin-right: 4em;
+  }
+
+  .controls-area {
+    margin-bottom: 1rem;
+  }
+
+  .stage-area {
+    margin-top: 18rem;
+  }
+
+  .gesture-select-area {
+    margin-bottom: -2rem;
+  }
+}
+
+/*media queries for mobile phones at least 383px*/
+@media only screen and (min-width: 383px) {
+  .computer-icon {
+    margin-right: 5em;
+  }
+}
+
+/*media queries for mobile phones at least 399px*/
+@media only screen and (min-width: 399px) {
+  .computer-icon {
+    margin-right: 7em;
+  }
+}
+
+/*media queries for mobile phones Pixel 2 at least 411px*/
+@media only screen and (min-width: 411px) {
+  .computer-icon {
+    margin-right: 6em;
+  }
+
+  .controls-area {
+    margin-bottom: 3rem;
+  }
+
+  .stage-area {
+    margin-top: 21rem;
+  }
+
+  .gesture-select-area {
+    margin-bottom: 6rem;
+  }
+}
+
+/*media queries for mobile phones at least 415px*/
+@media only screen and (min-width: 415px) {
+  .computer-icon {
+    margin-right: 8em;
+  }
+}
+
+/*media queries for mobile phones at least 447px*/
+@media only screen and (min-width: 447px) {
+  .computer-icon {
+    margin-right: 9em;
+  }
+}
+
+/*media queries for mobile phones at least 463px*/
+@media only screen and (min-width: 463px) {
+  .computer-icon {
+    margin-right: 10em;
+  }
+}
+
+/*media queries for mobile phones at least 479px*/
+@media only screen and (min-width: 479px) {
+  .computer-icon {
+    margin-right: 11em;
+  }
+}
+
+/*media queries for iPads, Tablets at least 480px*/
+@media only screen and (min-width: 480px) {
+  h1 {
+    font-size: 2.1rem;
+  }
+
+  .game-area {
+    padding: 1em;
+  }
+}
+
+/*media queries for iPads, Tablets at least 527px*/
+@media only screen and (min-width: 527px) {
+  .computer-icon {
+    margin-right: 12em;
+    margin-top: 4.5em;
+  }
+
+  .player-box {
+    height: 7em;
+    width: 7em;
+    margin-bottom: 2.5em;
+  }
+  
+  /*sends computerbox to the right*/
+  .computer-box {
+    height: 7em;
+    width: 7em;
+  }
+}
+
+/*media queries for iPads, Tablets at least 611px*/
+@media only screen and (min-width: 611px) {
+  .computer-icon {
+    margin-right: 13em;
+  }
+
+  .button-rock, .button-paper, .button-scissors, .button-lizard, .button-spock {
+    font-size: 3.5rem;
+    width: 4.5rem;
+  }
+}
+
+/*media queries for iPads, Tablets at least 627px*/
+@media only screen and (min-width: 627px) {
+  .computer-icon {
+    margin-right: 14em;
+  }
+}
+
+/*media queries for iPads, Tablets at least 642px*/
+@media only screen and (min-width: 642px) {
+  .computer-icon {
+    margin-right: 15em;
+  }
+}
+
+/*media queries for iPads, Tablets at least 659px*/
+@media only screen and (min-width: 659px) {
+  .computer-icon {
+    margin-right: 16em;
+  }
+}
+
+/*media queries for iPads, Tablets at least 675px*/
+@media only screen and (min-width: 675px) {
+  .computer-icon {
+    margin-right: 17em;
+  }
+}
+
+/*media queries for iPads, Tablets at least 691px*/
+@media only screen and (min-width: 691px) {
+  .computer-icon {
+    margin-right: 18em;
+  }
+}
+
+/*media queries for iPads, Tablets at least 707px*/
+@media only screen and (min-width: 707px) {
+  .computer-icon {
+    margin-right: 19em;
+  }
+}
+
+/*media queries for iPads, Tablets at least 723px*/
+@media only screen and (min-width: 723px) {
+  .computer-icon {
+    margin-right: 50%;
+  }
+}
+
+
+
