@@ -26,7 +26,15 @@ It has extra hand gestures for  lizard and spock. that lowered the chance of gre
 - __The logo is white with a game controller icon next beside which contrasts well with the blue background.__
 - __The music button plays the audio file put inside the game.__
  
- ![Controls area image](https://github.com/Awoyalejohn/RPSLS/blob/main/assets/readme-files/footer-image.PNG)
+ ![Controls area image](https://github.com/Awoyalejohn/RPSLS/blob/main/assets/readme-files/controls-image.PNG)
+ 
+ ### The game area
+
+- __Featured below the controls area__
+- __This shows the area where the hand gestures will display when one of them is clicked on to.__
+- __The box on the left shows the players choices and the box on the right shows the computers choices.__
+ 
+ ![game area image](https://github.com/Awoyalejohn/RPSLS/blob/main/assets/readme-files/game-area-image.PNG)
  
  
 
