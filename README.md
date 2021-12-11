@@ -89,6 +89,32 @@ It has extra hand gestures for  lizard and spock. that lowered the chance of gre
    
 ![the modals](https://github.com/Awoyalejohn/RPSLS/blob/main/assets/readme-files/game-lose.PNG)
     
+    
+### Credits
+Content
+The code used to hide the images of the hand gestures came from w3schoolshttps://www.w3schools.com/cssref/pr_class_display.asp
+Code used to target elements with the same classhttps://pretagteam.com/question/applying-different-content-to-same-class-instances-in-css
+Code used to display an element that was hidden https://www.w3schools.com/jsref/prop_style_display.asp
+Code used to randomise computer choices https://stackoverflow.com/questions/22623331/rock-paper-scissors-lizard-spock-in-javascript 
+Update score function was taking from the love maths tutorial https://www.youtube.com/watch?v=9sPrhBoTmSk
+Code use to check an element had to display https://stackoverflow.com/questions/4866229/check-element-css-display-with-javascript/41495923#41495923
+Code used to make the modals https://www.w3schools.com/howto/howto_css_modals.asp
+Function used to play audio with javaScript how to play audio with button and javascript https://developer.mozilla.org/en-US/docs/Web/API/HTMLAudioElement
+Function used to pause and play audio with javascript https://stackoverflow.com/questions/27368778/how-to-toggle-audio-play-pause-with-one-button-or-link
+Social Media buttons came from love running tutorialhttps://www.youtube.com/watch?v=i7brtaTm-3A
+
+
+DOMcontent loaded event listener code for all buttons i got from love maths https://www.youtube.com/watch?v=C3O-G2ab46Q
+Do nothing code https://stackoverflow.com/questions/21528660/how-do-you-make-your-else-statement-do-nothing/21528735
+Link to html emojis https://www.w3schools.com/charsets/ref_emoji.asp
+Function used to updates scores came from love maths video https://www.youtube.com/watch?v=9sPrhBoTmSk
+
+
+
+
+Media
+The images for the hand gestures came from font awesome https://fontawesome.com/
+The audio I used for the music button is from my brother’s soundcloud https://soundcloud.com/the-h3rmit/optimism
 
      
   
