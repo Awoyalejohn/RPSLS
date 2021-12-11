@@ -5,19 +5,30 @@
 }
 
 body{
-  background-color: #ffcc80;
+  background-color: #000060;
   font-family: 'Secular One', sans-serif;
   margin-top: auto;
+}
+
+
+button {
+  border: solid #ffffff;
+  background-color: #000060;
+  color: #ffffff;
 }
 
 /* makes header logo centered and removes underline*/
 h1, a {
   text-align: center;
   text-decoration: none;
-  color: blue;
+  color: #ffffff;
   font-family: 'Catamaran', sans-serif;
   margin-top: auto;
   margin-bottom: auto;
+}
+
+p {
+  color: #ffffff;
 }
 
 .controls-area {
@@ -45,19 +56,19 @@ h1, a {
 .player-box {
   height: 6em;
   width: 6em;
-  border: solid;
   float: right;
   margin-top: 1em;
   margin-right: 1em;
+  background-color: #ffffff;
 }
 
 .computer-box {
   height: 6em;
   width: 6em;
-  border: solid;
   float: right;
   margin-top: auto;
   margin-right: 1em;
+  background-color: #ffffff;
 }
 
 .stage-area {
@@ -81,13 +92,16 @@ h1, a {
   margin-bottom: -3.5rem;
 }
 
+.hand-gesture-row1 {
+  margin-bottom: 0.4em;
+}
+
 .button-rock, .button-paper, .button-scissors, .button-lizard, .button-spock {
   margin-left: 1rem;
   margin-left: 1rem;
   font-size: 3rem;
-  border: solid;
-  background-color: blue;
-  color: orange;
+  background-color: #ffffff;
+  color: #000000;
 }
 
 footer {
@@ -99,12 +113,14 @@ footer {
   font-size: 1.5rem;
   margin-left: 1rem;
   margin-left: 1rem;
+  border: none;
 }
 
 .copyright {
   margin-top: -0.6rem;
   margin-bottom: -1rem;
   font-size: 0.8rem;
+  color: #ffffff;
 }
 
 /* hides all the hand gesture images inside of the player and computer boxes*/
@@ -145,12 +161,22 @@ img.hidden {
 
 /* how to play modal */
 .how-to-play-content {
-  background-color: lightblue;
+  background-color: #ffffff;
+  color: #000000;
   margin: auto;
   padding: 1em;
   border: 1px solid #888;
   width: 80%;
   font-size: 0.85rem;
+}
+
+.how-to-play-content p {
+  color: #000000; 
+  margin-top: auto;
+}
+
+.how-to-play-content h1 {
+  color: #000000; 
 }
 
 /* The Close Button for how to play modal*/
