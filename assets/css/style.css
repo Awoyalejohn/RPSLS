@@ -11,11 +11,22 @@ body{
 }
 
 
-button {
+
+
+
+
+.play-button,.restart-button, .music-button {
   border: solid #ffffff;
   background-color: #000060;
   color: #ffffff;
+  border-radius: 5px;
 }
+
+.play-button:hover, .restart-button:hover, .music-button:hover {
+  border: solid #ff8000;
+  color: #ff8000;
+}
+
 
 /* makes header logo centered and removes underline*/
 h1, a {
@@ -25,6 +36,10 @@ h1, a {
   font-family: 'Catamaran', sans-serif;
   margin-top: auto;
   margin-bottom: auto;
+}
+
+h1:hover {
+  color: #ff8000;
 }
 
 p {
@@ -60,6 +75,7 @@ p {
   margin-top: 1em;
   margin-right: 1em;
   background-color: #ffffff;
+  border-radius: 5px;
 }
 
 .computer-box {
@@ -69,6 +85,7 @@ p {
   margin-top: auto;
   margin-right: 1em;
   background-color: #ffffff;
+  border-radius: 5px;
 }
 
 .stage-area {
@@ -102,6 +119,12 @@ p {
   font-size: 3rem;
   background-color: #ffffff;
   color: #000000;
+  width: 4rem;
+  border-radius: 5px;
+}
+
+.button-rock:hover, .button-paper:hover, .button-scissors:hover, .button-lizard:hover, .button-spock:hover {
+  background-color: #ff8000;
 }
 
 footer {
@@ -114,6 +137,12 @@ footer {
   margin-left: 1rem;
   margin-left: 1rem;
   border: none;
+  background-color: #000060;
+  color: #ffffff;
+}
+
+.facebook:hover, .twitter:hover, .instagram:hover, .youtube:hover {
+  color: #ff8000;
 }
 
 .copyright {
@@ -209,12 +238,16 @@ img.hidden {
 }
 
 .round-win-content, .round-lose-content, .round-draw-content {
-  background-color: lightblue;
+  background-color: #ffffff;
   margin: auto;
   padding: 1em;
   border: 1px solid #888;
   width: 80%;
   font-size: 0.85rem;
+}
+
+.round-win-content p, .round-lose-content p, .round-draw-content p {
+  color: #000000;
 }
 
 
@@ -232,10 +265,14 @@ img.hidden {
 }
 
 .game-win-content, .game-lose-content, .game-draw-content {
-  background-color: lightblue;
+  background-color: #ffffff;
   margin: auto;
   padding: 1em;
   border: 1px solid #888;
   width: 80%;
   font-size: 0.85rem;
+}
+
+.game-win-content p, .game-lose-content p, .game-draw-content p{
+  color: #000000;
 }
