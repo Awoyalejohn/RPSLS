@@ -6,78 +6,72 @@ It has extra hand gestures for  lizard and spock. that lowered the chance of gre
 
 ## Features 
 
-### The Header
-
-- Featured at the top of the page.
-- Has a hyper link to the homepage.
-- Users can use it another way to reset the page.
-- The header has a blue background colour.__
-- The logo is white with a game controller icon next beside which contrasts well with the blue background.
-- Font style used for the website title text is Catamaran.
+### Existing Features
  
- ![Header](https://github.com/Awoyalejohn/RPSLS/blob/main/assets/readme-files/heade-image.PNG)
+- The Header
+  - Featured at the top of the page.
+  - Has a hyper link to the homepage.
+  - Users can use it another way to reset the page.
+  - The header has a blue background colour.__
+  - The logo is white with a game controller icon next beside which contrasts well with the blue background.
+  - Font style used for the website title text is Catamaran.
  
- ### The controls area
-
-- Featured below the header.
-- The controls area gives access to the how to play button, restart button and music button.
-- When the user clicks on the how to play button a modal will pop up and give a brief explanation of how you play the game. The modal can be closed by clicking anywhere on the screen.
-- The restart button clears all the values on the page and starts the game again..
-- The logo is white with a game controller icon next beside which contrasts well with the blue background.
-- The music button plays the audio file put inside the game.
+![Header](https://github.com/Awoyalejohn/RPSLS/blob/main/assets/readme-files/heade-image.PNG)
  
- ![Controls area image](https://github.com/Awoyalejohn/RPSLS/blob/main/assets/readme-files/controls-image.PNG)
+- The controls area
+  - Featured below the header.
+  - The controls area gives access to the how to play button, restart button and music button.
+  - When the user clicks on the how to play button a modal will pop up and give a brief explanation of how you play the game. The modal can be closed by clicking anywhere on the screen.
+  - The restart button clears all the values on the page and starts the game again..
+  - The logo is white with a game controller icon next beside which contrasts well with the blue background.
+  - The music button plays the audio file put inside the game.
  
- ### The game area
-
-- Featured below the controls area
-- This shows the area where the hand gestures will display when one of them is clicked on to.
-- The box on the left shows the players choices and the box on the right shows the computers choices.
+![Controls area image](https://github.com/Awoyalejohn/RPSLS/blob/main/assets/readme-files/controls-image.PNG)
+ 
+- The game area
+  - Featured below the controls area
+  - This shows the area where the hand gestures will display when one of them is clicked on to.
+  - The box on the left shows the players choices and the box on the right shows the computers choices.
  
  ![game area image](https://github.com/Awoyalejohn/RPSLS/blob/main/assets/readme-files/game-area-image.PNG)
  
-  ### The round area
-
-- Featured below the game area
-- This tracks the rounds that pass
+- The round area
+  - Featured below the game area
+  - This tracks the rounds that pass
  
- ![round area image](https://github.com/Awoyalejohn/RPSLS/blob/main/assets/readme-files/round%20image.PNG)
+![round area image](https://github.com/Awoyalejohn/RPSLS/blob/main/assets/readme-files/round%20image.PNG)
  
-   ### The score area
-
-- Featured below the roundarea
-- This keeps track of the wins, losses, and draws that occur every round
+- The score area
+  - Featured below the roundarea
+  - This keeps track of the wins, losses, and draws that occur every round
  
- ![score area image](https://github.com/Awoyalejohn/RPSLS/blob/main/assets/readme-files/score-image.PNG)
+![score area image](https://github.com/Awoyalejohn/RPSLS/blob/main/assets/readme-files/score-image.PNG)
  
- ### The hand gesture area
-
-- Featured below the score
-- This is where they will select their choice button when going against the computer.
-- The buttons have an oranger hover effect when the mouse is hovered above it.
-- This makes it easier for users to pick the choice that they want.
+- The hand gesture area
+  - Featured below the score
+  - This is where they will select their choice button when going against the computer.
+  - The buttons have an oranger hover effect when the mouse is hovered above it.
+  - This makes it easier for users to pick the choice that they want.
  
- ![hand gesture area](https://github.com/Awoyalejohn/RPSLS/blob/main/assets/readme-files/hand-gestures-image.PNG)
+![hand gesture area](https://github.com/Awoyalejohn/RPSLS/blob/main/assets/readme-files/hand-gestures-image.PNG)
  
-  ### The footer area
-
-- Featured below hand gesture area
-- Shows the social media icons to Twitter, facebook, instagram and youtube
-- All are links that will open a new tab when clicked
-- The copyright info is also at the very bottom of the site.
+- The footer area
+  - Featured below hand gesture area
+  - Shows the social media icons to Twitter, facebook, instagram and youtube
+  - All are links that will open a new tab when clicked
+  - The copyright info is also at the very bottom of the site.
  
- ![footer area](https://github.com/Awoyalejohn/RPSLS/blob/main/assets/readme-files/footer-image.PNG)
+![footer area](https://github.com/Awoyalejohn/RPSLS/blob/main/assets/readme-files/footer-image.PNG)
  
- ### The modals 
-
-- A group of seven modals that will pop up depending on the condition
-- The how to modal shows how to play the game and can be closed by clicking the x  button or on background
-- Round win modal displays whenever the player wins a round
-- Round lose modal displays whenever the player wins a round 
-- Round draw modal displays whenever the player wins a round 
-- Game win  modal displays the player won the game if the player wins 5 rounds.
-- Gamelose  modal displays the player lost the game if  player loses 5 rounds
-- Game draw modal displays whenever the player draws in 5 rounds
+- The modals 
+  - A group of seven modals that will pop up depending on the condition
+  - The how to modal shows how to play the game and can be closed by clicking the x  button or on background
+  - Round win modal displays whenever the player wins a round
+  - Round lose modal displays whenever the player wins a round 
+  - Round draw modal displays whenever the player wins a round 
+  - Game win  modal displays the player won the game if the player wins 5 rounds.
+  - Gamelose  modal displays the player lost the game if  player loses 5 rounds
+  - Game draw modal displays whenever the player draws in 5 rounds
  
 ![the modals](https://github.com/Awoyalejohn/RPSLS/blob/main/assets/readme-files/round-win.PNG)
  
@@ -88,7 +82,8 @@ It has extra hand gestures for  lizard and spock. that lowered the chance of gre
 ![the modals](https://github.com/Awoyalejohn/RPSLS/blob/main/assets/readme-files/game-win.PNG)
    
 ![the modals](https://github.com/Awoyalejohn/RPSLS/blob/main/assets/readme-files/game-lose.PNG)
-    
+
+
     
 ### Credits
 Content
