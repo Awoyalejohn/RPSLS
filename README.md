@@ -121,37 +121,22 @@ The live link can be found here - https://awoyalejohn.github.io/RPSLS/
 ## Credits
 ### Content
 - The code used to hide the images of the hand gestures came from [w3schools]( https://www.w3schools.com/cssref/pr_class_display.asp)
-
 - The code used to target elements with the same class was taken from [Pretag](https://pretagteam.com/question/applying-different-content-to-same-class-instances-in-css)
-
 - The code used to display an element that was hidden was taken from [w3schools](https://www.w3schools.com/jsref/prop_style_display.asp)
-
 - The code used to randomise computer choices was taken from an answer on [Stackoverflow](https://stackoverflow.com/questions/22623331/rock-paper-scissors-lizard-spock-in-javascript)
-
 - Update score function code was taking from the [love maths tutorial](https://www.youtube.com/watch?v=9sPrhBoTmSk)
-
 - The code used to check if an elemrnt in CSS was set to displaywas taken from [Stackoverflow](https://stackoverflow.com/questions/4866229/check-element-css-display-with-javascript/41495923#41495923)
-
 - Code used to make the modals was taken from [W3schools](https://www.w3schools.com/howto/howto_css_modals.asp)
-
 - The code used to add audio was taken from [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/HTMLAudioElement)
-
 - The code used to pause and play audio with javascript from taken from an answer on [Stackoveflow](https://stackoverflow.com/questions/27368778/how-to-toggle-audio-play-pause-with-one-button-or-link)
-
 - The code for the Social Media buttons came from [love running tutorial](https://www.youtube.com/watch?v=i7brtaTm-3A)
-
 - DOMcontent loaded event listener code for all buttons I got from [love maths tutorial](https://www.youtube.com/watch?v=C3O-G2ab46Q)
-
 - The do nothing code came from [Stackoveflow](https://stackoverflow.com/questions/21528660/how-do-you-make-your-else-statement-do-nothing/21528735)
-
 - The code used for the emojis is from [W3schools](https://www.w3schools.com/charsets/ref_emoji.asp)
-
 - The code used to updates scores was from the [love maths tutorial](https://www.youtube.com/watch?v=9sPrhBoTmSk)
-
 
 ### Media
 - The images for the hand gestures came from [font awesome](https://fontawesome.com/)
-
 - The audio I used for the music button is from [my brother’s soundcloud](https://soundcloud.com/the-h3rmit/optimism)
 
      
