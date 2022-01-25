@@ -2,6 +2,8 @@
 RPSLS is a game targeted towards people that are interested in playing a challenging game of rock, paper, scissor. 
 It has extra hand gestures for  lizard and spock. that lowered the chance of greeting a draw that would typically happen when playing the regular version of the game.
 
+The live link can be found here - https://awoyalejohn.github.io/RPSLS/
+
 ![RPSLS website Mockup](https://github.com/Awoyalejohn/RPSLS/blob/main/assets/readme-files/website-mockup-image.PNG)
 
 ## Features 
@@ -107,6 +109,13 @@ It has extra hand gestures for  lizard and spock. that lowered the chance of gre
 ### Unfixed Bugs
 No unfixed bugs
 
+## Deployment
+- The website was deployed to GitHub pages. The steps to deploy are as follows:
+  - In the GitHub repository, navigate to the settings tab
+  - From the sources section drop-down menu, select the Main Branch
+  - Once the Main branch has been selected, the page provided the to the completed website.
+
+The live link can be found here - https://awoyalejohn.github.io/RPSLS/
 
     
 ## Credits
