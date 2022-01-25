@@ -105,6 +105,8 @@ The live link can be found here - https://awoyalejohn.github.io/RPSLS/
   - No errors were found when passing througj the oficial (Jigsaw) validator.
 - JS
   - No errors were present when passing through the javascript validator.
+- Accessibility
+  - I confirmed that the colours and fonts chosen are easy to read and accessible by running the website through the lighthouse in devtools. I also used the the Adobe color contrast checker to test if the colour scheme was accessible.
 
 ### Unfixed Bugs
 No unfixed bugs
