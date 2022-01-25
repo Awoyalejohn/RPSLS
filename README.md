@@ -108,6 +108,8 @@ The live link can be found here - https://awoyalejohn.github.io/RPSLS/
 - Accessibility
   - I confirmed that the colours and fonts chosen are easy to read and accessible by running the website through the lighthouse in devtools. I also used the the Adobe color contrast checker to test if the colour scheme was accessible.
 
+![Adobe color contrast colour scheme result](https://github.com/Awoyalejohn/RPSLS/blob/main/assets/readme-files/colour-accessiblility.PNG)
+
 ### Unfixed Bugs
 No unfixed bugs
 
