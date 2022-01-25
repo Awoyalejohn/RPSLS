@@ -91,8 +91,10 @@ It has extra hand gestures for  lizard and spock. that lowered the chance of gre
 - I confirmed that the header, How to Play, Restart Game and music options, results and footer icons are readable and easy to understand.
 - I confirmed that the game is responsive, looks good and functions on all standard screen sizes using devtools device toolbar.
 
-#### Bugs
-- Solved bugs
+### Bugs
+
+#### Solved bugs
+- When I added a way for the hand gestures to display inside of the boxes when a hand gesture button was clicked. The hand gestures would stack on top of eachother after every new hand gesture button click. I fixed this by adding a function the would check if the was already a hand gestuer inside the box then stop it from displaying befor the new hand gesture would display.
 
     
 ## Credits
