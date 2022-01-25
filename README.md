@@ -100,9 +100,9 @@ The live link can be found here - https://awoyalejohn.github.io/RPSLS/
 
 ### Validator Testing
 - HTML
-  - Now errors were returned when passing throught the official W3C Validator.
+  - Now errors were returned when passing throught the [official W3C Validator.](https://validator.w3.org/nu/?doc=https%3A%2F%2Fawoyalejohn.github.io%2FRPSLS%2F)
 - CSS 
-  - No errors were found when passing througj the oficial (Jigsaw) validator.
+  - No errors were found when passing througj the oficial [(Jigsaw) validator.](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fawoyalejohn.github.io%2FRPSLS%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 - JS
   - No errors were present when passing through the javascript validator.
 - Accessibility
