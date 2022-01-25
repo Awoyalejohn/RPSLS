@@ -113,12 +113,13 @@ No unfixed bugs
 - The website was deployed to GitHub pages. The steps to deploy are as follows:
   - In the GitHub repository, navigate to the settings tab
   - From the sources section drop-down menu, select the Main Branch
-  - Once the Main branch has been selected, the page provided the to the completed website.
+  - Once the Main branch has been selected, the page will provide a link to the completed website
 
 The live link can be found here - https://awoyalejohn.github.io/RPSLS/
 
     
 ## Credits
+
 ### Content
 - The code used to hide the images of the hand gestures came from [w3schools]( https://www.w3schools.com/cssref/pr_class_display.asp)
 - The code used to target elements with the same class was taken from [Pretag](https://pretagteam.com/question/applying-different-content-to-same-class-instances-in-css)
