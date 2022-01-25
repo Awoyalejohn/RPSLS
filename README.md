@@ -96,6 +96,18 @@ It has extra hand gestures for  lizard and spock. that lowered the chance of gre
 #### Solved bugs
 - When I added a way for the hand gestures to display inside of the boxes when a hand gesture button was clicked. The hand gestures would stack on top of eachother after every new hand gesture button click. I fixed this by adding a function the would check if the was already a hand gestuer inside the box then stop it from displaying befor the new hand gesture would display.
 
+### Validator Testing
+- HTML
+  - Now errors were returned when passing throught the official W3C Validator.
+- CSS 
+  - No errors were found when passing througj the oficial (Jigsaw) validator.
+- JS
+  - No errors were present when passing through the javascript validator.
+
+### Unfixed Bugs
+No unfixed bugs
+
+
     
 ## Credits
 Content
