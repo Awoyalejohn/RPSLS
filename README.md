@@ -12,7 +12,7 @@ It has extra hand gestures for  lizard and spock. that lowered the chance of gre
   - Featured at the top of the page.
   - Has a hyper link to the homepage.
   - Users can use it another way to reset the page.
-  - The header has a blue background colour.__
+  - The header has a blue background colour.
   - The logo is white with a game controller icon next beside which contrasts well with the blue background.
   - Font style used for the website title text is Catamaran.
  
@@ -83,9 +83,19 @@ It has extra hand gestures for  lizard and spock. that lowered the chance of gre
    
 ![the modals](https://github.com/Awoyalejohn/RPSLS/blob/main/assets/readme-files/game-lose.PNG)
 
+## Testing
+
+- I tested that the game works in different browsers: Chrome, Firefox, and Opera.
+- I confirmed that all buttons worked with the intended result when clicked.
+- I confirmed that the gameover modal would show after 5 points to win, draw, or lose.
+- I confirmed that the header, How to Play, Restart Game and music options, results and footer icons are readable and easy to understand.
+- I confirmed that the game is responsive, looks good and functions on all standard screen sizes using devtools device toolbar.
+
+#### Bugs
+- Solved bugs
 
     
-### Credits
+## Credits
 Content
 The code used to hide the images of the hand gestures came from w3schoolshttps://www.w3schools.com/cssref/pr_class_display.asp
 Code used to target elements with the same classhttps://pretagteam.com/question/applying-different-content-to-same-class-instances-in-css
