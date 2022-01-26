@@ -100,7 +100,7 @@ The live link can be found here - https://awoyalejohn.github.io/RPSLS/
 #### Solved bugs
 - When I added a way for the hand gestures to display inside of the boxes when a hand gesture button was clicked. The hand gestures would stack on top of each other after every new hand gesture button click. I fixed this by adding a function the would check if there was already a hand gestuer inside the box then stop it from displaying by changing that hand gesture to hidden before the new hand gesture would display.
 
-- I hade a bug where some hand gestures would display outside of the computer hand gesture box when the website was being viewed on larger screens. I fixed this by adding more media queries to postion the hand gesture better inside the computer hand gesture box.
+- I had a bug where some hand gestures would display outside of the computer hand gesture box when the website was being viewed on larger screens. I fixed this by adding more media queries to postion the hand gesture better inside the computer hand gesture box.
 
 ### Validator Testing
 - HTML
