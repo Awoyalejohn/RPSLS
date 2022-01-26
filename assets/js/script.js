@@ -16,17 +16,17 @@ document.addEventListener('DOMContentLoaded', function() {
         restartGame();
       } else if (this.getAttribute('data-type') === 'play music') {
         playAudio();
-      } else if (this.getAttribute('data-type') === 'facebook' 
-      || this.getAttribute('data-type') === 'twitter' 
-      || this.getAttribute('data-type') === 'instagram' 
-      || this.getAttribute('data-type') === 'youtube') {
-        //do nothing!
+      } else if (this.getAttribute('data-type') === 'facebook' ||
+        this.getAttribute('data-type') === 'twitter' ||
+        this.getAttribute('data-type') === 'instagram' ||
+        this.getAttribute('data-type') === 'youtube') {
+          //do nothing!
       } else {
         let gameType = this.getAttribute("data-type");
         runGame(gameType); 
         determineRoundWinner();
       }
-    })
+    });
   }
 
   //adds event listener to close modals with the x buttion
@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
   for (let closeBackgroundRound of closeBackgroundRounds ) {
     closeBackgroundRound.addEventListener('click',closeModals);
   }
-})
+});
 
 /**
 * resets all the values to restart game
@@ -71,9 +71,9 @@ function restartGame() {
 function playAudio() {
   let audio = document.getElementById('music');
   if (audio.paused) {
-    audio.play()
+    audio.play();
   } else {
-    audio.pause()
+    audio.pause();
   }
 }
 
@@ -172,26 +172,26 @@ function displayPlayerSpock() {
 */
 function runGame(gameType) {
 
-// displays the player's choice in player box 
-	if (gameType === "rock") {
-		displayPlayerRock()
-	} else if (gameType === "paper") {
-	  displayPlayerPaper();
-	} else if (gameType === "scissors") {
-	  displayPlayerScissors();
-	} else if (gameType === "lizard") {
-	  displayPlayerLizard();
-	} else if (gameType === "spock") {
-	  displayPlayerSpock();
-	} else {
-		alert(`Unknown hand gesture ${gameType}`);
-		throw `Unknown hand gesture ${gameType}, aborting!`;
-	}
-}
+  // displays the player's choice in player box 
+    if (gameType === "rock") {
+      displayPlayerRock();
+    } else if (gameType === "paper") {
+      displayPlayerPaper();
+    } else if (gameType === "scissors") {
+      displayPlayerScissors();
+    } else if (gameType === "lizard") {
+      displayPlayerLizard();
+    } else if (gameType === "spock") {
+      displayPlayerSpock();
+    } else {
+      alert(`Unknown hand gesture ${gameType}`);
+      throw `Unknown hand gesture ${gameType}, aborting!`;
+    }
+  }
 
-// displays the computers's choice in player box 
+  // displays the computers's choice in player box 
 function displayRandomComputerGesture() {
-  clearcomputerBoxChoice()
+  clearcomputerBoxChoice();
   let randomNum =Math.floor(Math.random() * computerBoxChoices.length);
   computerBoxChoices[randomNum].style.display = 'block';
   
@@ -201,25 +201,25 @@ function displayRandomComputerGesture() {
  * calculates the outcome for when rock is chosen 
  * then updates score if win, lose, or draw occurs.
  */
-function rockMatchPatterns() {
-  if (playerBoxChoices[0].style.display === 'block' 
-  && computerBoxChoices[2].style.display === 'block') {
+ function rockMatchPatterns() {
+  if (playerBoxChoices[0].style.display === 'block' &&
+    computerBoxChoices[2].style.display === 'block') {
     incrementWin();
     displayRoundWin();
-  } else if (playerBoxChoices[0].style.display === 'block' 
-  && computerBoxChoices[3].style.display === 'block') {
+  } else if (playerBoxChoices[0].style.display === 'block' &&
+    computerBoxChoices[3].style.display === 'block') {
     incrementWin();
     displayRoundWin();
-  } else if (playerBoxChoices[0].style.display === 'block' 
-  && computerBoxChoices[1].style.display === 'block') {
+  } else if (playerBoxChoices[0].style.display === 'block' &&
+    computerBoxChoices[1].style.display === 'block') {
     incrementLose();
     displayRoundLose();
-  } else if (playerBoxChoices[0].style.display === 'block' 
-  && computerBoxChoices[4].style.display === 'block') {
+  } else if (playerBoxChoices[0].style.display === 'block' &&
+    computerBoxChoices[4].style.display === 'block') {
     incrementLose();
     displayRoundLose();
-  } else if (playerBoxChoices[0].style.display === 'block' 
-  && computerBoxChoices[0].style.display === 'block') {
+  } else if (playerBoxChoices[0].style.display === 'block' &&
+    computerBoxChoices[0].style.display === 'block') {
     incrementDraw();
     displayRoundDraw();
   }
@@ -229,25 +229,25 @@ function rockMatchPatterns() {
  * calculates the outcome for when paper is chosen
  * then updates score if win, lose, or draw occurs.
  */
-function paperMatchPatterns() {
-  if (playerBoxChoices[1].style.display === 'block' 
-  && computerBoxChoices[0].style.display === 'block') {
+ function paperMatchPatterns() {
+  if (playerBoxChoices[1].style.display === 'block' &&
+    computerBoxChoices[0].style.display === 'block') {
     incrementWin();
     displayRoundWin();
-  } else if (playerBoxChoices[1].style.display === 'block' 
-  && computerBoxChoices[4].style.display === 'block') {
+  } else if (playerBoxChoices[1].style.display === 'block' &&
+    computerBoxChoices[4].style.display === 'block') {
     incrementWin();
     displayRoundWin();
-  } else if (playerBoxChoices[1].style.display === 'block' 
-  && computerBoxChoices[2].style.display === 'block') {
+  } else if (playerBoxChoices[1].style.display === 'block' &&
+    computerBoxChoices[2].style.display === 'block') {
     incrementLose();
     displayRoundLose();
-  } else if (playerBoxChoices[1].style.display === 'block' 
-  && computerBoxChoices[3].style.display === 'block') {
+  } else if (playerBoxChoices[1].style.display === 'block' &&
+    computerBoxChoices[3].style.display === 'block') {
     incrementLose();
     displayRoundLose();
-  } else if (playerBoxChoices[1].style.display === 'block' 
-  && computerBoxChoices[1].style.display === 'block') {
+  } else if (playerBoxChoices[1].style.display === 'block' &&
+    computerBoxChoices[1].style.display === 'block') {
     incrementDraw();
     displayRoundDraw();
   }
@@ -257,25 +257,25 @@ function paperMatchPatterns() {
  * calculates the outcome for when scissors is chosen
  * then updates score if win, lose, or draw occurs.
  */
-function scissorsMatchPatterns() {
-  if (playerBoxChoices[2].style.display === 'block' 
-  && computerBoxChoices[1].style.display === 'block') {
+ function scissorsMatchPatterns() {
+  if (playerBoxChoices[2].style.display === 'block' &&
+    computerBoxChoices[1].style.display === 'block') {
     incrementWin();
     displayRoundWin();
-  } else if (playerBoxChoices[2].style.display === 'block' 
-  && computerBoxChoices[3].style.display === 'block') {
+  } else if (playerBoxChoices[2].style.display === 'block' &&
+    computerBoxChoices[3].style.display === 'block') {
     incrementWin();
     displayRoundWin();
-  } else if (playerBoxChoices[2].style.display === 'block' 
-  && computerBoxChoices[0].style.display === 'block') {
+  } else if (playerBoxChoices[2].style.display === 'block' &&
+    computerBoxChoices[0].style.display === 'block') {
     incrementLose();
     displayRoundLose();
-  } else if (playerBoxChoices[2].style.display === 'block' 
-  && computerBoxChoices[4].style.display === 'block') {
+  } else if (playerBoxChoices[2].style.display === 'block' &&
+    computerBoxChoices[4].style.display === 'block') {
     incrementLose();
     displayRoundLose();
-  } else if (playerBoxChoices[2].style.display === 'block' 
-  && computerBoxChoices[2].style.display === 'block') {
+  } else if (playerBoxChoices[2].style.display === 'block' &&
+    computerBoxChoices[2].style.display === 'block') {
     incrementDraw();
     displayRoundDraw();
   }
@@ -285,25 +285,25 @@ function scissorsMatchPatterns() {
  * calculates the outcome for when lizard is chosen
  * then updates score if win, lose, or draw occurs.
  */
-function lizardMatchPatterns() {
-  if (playerBoxChoices[3].style.display === 'block' 
-  && computerBoxChoices[1].style.display === 'block') {
+ function lizardMatchPatterns() {
+  if (playerBoxChoices[3].style.display === 'block' &&
+    computerBoxChoices[1].style.display === 'block') {
     incrementWin();
     displayRoundWin();
-  } else if (playerBoxChoices[3].style.display === 'block' 
-  && computerBoxChoices[4].style.display === 'block') {
+  } else if (playerBoxChoices[3].style.display === 'block' &&
+    computerBoxChoices[4].style.display === 'block') {
     incrementWin();
     displayRoundWin();
-  } else if (playerBoxChoices[3].style.display === 'block' 
-  && computerBoxChoices[0].style.display === 'block') {
+  } else if (playerBoxChoices[3].style.display === 'block' &&
+    computerBoxChoices[0].style.display === 'block') {
     incrementLose();
     displayRoundLose();
-  } else if (playerBoxChoices[3].style.display === 'block' 
-  && computerBoxChoices[2].style.display === 'block') {
+  } else if (playerBoxChoices[3].style.display === 'block' &&
+    computerBoxChoices[2].style.display === 'block') {
     incrementLose();
     displayRoundLose();
-  } else if (playerBoxChoices[3].style.display === 'block' 
-  && computerBoxChoices[3].style.display === 'block') {
+  } else if (playerBoxChoices[3].style.display === 'block' &&
+    computerBoxChoices[3].style.display === 'block') {
     incrementDraw();
     displayRoundDraw();
   }
@@ -313,25 +313,25 @@ function lizardMatchPatterns() {
  * calculates the outcome for when spock is chosen
  * then updates score if win, lose, or draw occurs.
  */
-function spockMatchPatterns() {
-  if (playerBoxChoices[4].style.display === 'block' 
-  && computerBoxChoices[0].style.display === 'block') {
+ function spockMatchPatterns() {
+  if (playerBoxChoices[4].style.display === 'block' &&
+   computerBoxChoices[0].style.display === 'block') {
     incrementWin();
     displayRoundWin();
-  } else if (playerBoxChoices[4].style.display === 'block' 
-  && computerBoxChoices[2].style.display === 'block') {
+  } else if (playerBoxChoices[4].style.display === 'block' &&
+   computerBoxChoices[2].style.display === 'block') {
     incrementWin();
     displayRoundWin();
-  } else if (playerBoxChoices[4].style.display === 'block' 
-  && computerBoxChoices[1].style.display === 'block') {
+  } else if (playerBoxChoices[4].style.display === 'block' &&
+   computerBoxChoices[1].style.display === 'block') {
     incrementLose();
     displayRoundLose();
-  } else if (playerBoxChoices[4].style.display === 'block' 
-  && computerBoxChoices[3].style.display === 'block') {
+  } else if (playerBoxChoices[4].style.display === 'block' &&
+   computerBoxChoices[3].style.display === 'block') {
     incrementLose();
     displayRoundLose();
-  } else if (playerBoxChoices[4].style.display === 'block' 
-  && computerBoxChoices[4].style.display === 'block') {
+  } else if (playerBoxChoices[4].style.display === 'block' &&
+   computerBoxChoices[4].style.display === 'block') {
     incrementDraw();
     displayRoundDraw();
   }
@@ -340,26 +340,26 @@ function spockMatchPatterns() {
 /**
  * calculates the outcome of all hand gestures chosen
  */
-function determineRoundWinner() {
+ function determineRoundWinner() {
   displayRandomComputerGesture();
   rockMatchPatterns();
   paperMatchPatterns();
   scissorsMatchPatterns();
   lizardMatchPatterns();
   spockMatchPatterns();
-  incrementRound()
+  incrementRound();
 }
 
 /**
  * checks if anything is displayed in player box then replaces it with new hand gesture
  */
-function clearPlayerBoxChoice() {
+ function clearPlayerBoxChoice() {
   
-  if (playerBoxChoices[0].style.display === 'block' 
-  || playerBoxChoices[1].style.display === 'block' 
-  || playerBoxChoices[2].style.display === 'block' 
-  || playerBoxChoices[3].style.display === 'block' 
-  || playerBoxChoices[4].style.display === 'block') {
+  if (playerBoxChoices[0].style.display === 'block' ||
+   playerBoxChoices[1].style.display === 'block' ||
+   playerBoxChoices[2].style.display === 'block' ||
+   playerBoxChoices[3].style.display === 'block' ||
+   playerBoxChoices[4].style.display === 'block') {
     playerBoxChoices[0].style.display = 'none';
     playerBoxChoices[1].style.display = 'none';
     playerBoxChoices[2].style.display = 'none';
@@ -371,12 +371,12 @@ function clearPlayerBoxChoice() {
 /**
  * checks if anything is displayed in computer box then replaces it with new hand gesture
  */
-function clearcomputerBoxChoice() {
-  if (computerBoxChoices[0].style.display === 'block' 
-  || computerBoxChoices[1].style.display === 'block' 
-  || computerBoxChoices[2].style.display === 'block' 
-  || computerBoxChoices[3].style.display === 'block' 
-  || computerBoxChoices[4].style.display === 'block') {
+ function clearcomputerBoxChoice() {
+  if (computerBoxChoices[0].style.display === 'block' ||
+   computerBoxChoices[1].style.display === 'block' ||
+   computerBoxChoices[2].style.display === 'block' ||
+   computerBoxChoices[3].style.display === 'block' ||
+   computerBoxChoices[4].style.display === 'block') {
     computerBoxChoices[0].style.display = 'none';
     computerBoxChoices[1].style.display = 'none';
     computerBoxChoices[2].style.display = 'none';
