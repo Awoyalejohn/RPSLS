@@ -1,6 +1,6 @@
 # RPSLS
-RPSLS is a game targeted towards people that are interested in playing a challenging game of rock, paper, scissor. 
-It has extra hand gestures for  lizard and spock. that lowered the chance of greeting a draw that would typically happen when playing the regular version of the game.
+RPSLS is a game targeted towards people that are interested in playing a challenging game of rock, paper, scissors. 
+It has extra hand gestures for lizard and spock that lowers the chance of getting a draw which would typically happen when playing the regular version of the game.
 
 The live link can be found here - https://awoyalejohn.github.io/RPSLS/
 
@@ -13,9 +13,9 @@ The live link can be found here - https://awoyalejohn.github.io/RPSLS/
 - The Header
   - Featured at the top of the page.
   - Has a hyper link to the homepage.
-  - Users can use it another way to reset the page.
+  - Users can use it as another way to reset the page.
   - The header has a blue background colour.
-  - The logo is white with a game controller icon next beside which contrasts well with the blue background.
+  - The logo is white with a game controller icon beside it which contrasts well with the blue background.
   - Font style used for the website title text is Catamaran.
  
 ![Header](https://github.com/Awoyalejohn/RPSLS/blob/main/assets/readme-files/heade-image.PNG)
@@ -52,15 +52,15 @@ The live link can be found here - https://awoyalejohn.github.io/RPSLS/
 - The hand gesture area
   - Featured below the score
   - This is where they will select their choice button when going against the computer.
-  - The buttons have an oranger hover effect when the mouse is hovered above it.
+  - The buttons have an orange hover effect when the mouse hovers over it.
   - This makes it easier for users to pick the choice that they want.
  
 ![hand gesture area](https://github.com/Awoyalejohn/RPSLS/blob/main/assets/readme-files/hand-gestures-image.PNG)
  
 - The footer area
-  - Featured below hand gesture area
-  - Shows the social media icons to Twitter, facebook, instagram and youtube
-  - All are links that will open a new tab when clicked
+  - Featured below hand gesture area.
+  - Shows the social media icons for Twitter, Facebook, Instagram and Youtube.
+  - Each social media button has a link that will open a new tab when clicked.
   - The copyright info is also at the very bottom of the site.
  
 ![footer area](https://github.com/Awoyalejohn/RPSLS/blob/main/assets/readme-files/footer-image.PNG)
