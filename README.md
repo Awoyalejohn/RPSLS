@@ -75,15 +75,17 @@ The live link can be found here - https://awoyalejohn.github.io/RPSLS/
   - Gamelose  modal displays the player lost the game if  player loses 5 rounds
   - Game draw modal displays whenever the player draws in 5 rounds
  
-![the modals](https://github.com/Awoyalejohn/RPSLS/blob/main/assets/readme-files/round-win.PNG)
+![Round win modal](https://github.com/Awoyalejohn/RPSLS/blob/main/assets/readme-files/round-win.PNG)
  
-![the modals](https://github.com/Awoyalejohn/RPSLS/blob/main/assets/readme-files/round-lose.PNG)
+![Round lose modal](https://github.com/Awoyalejohn/RPSLS/blob/main/assets/readme-files/round-lose.PNG)
  
-![the modals](https://github.com/Awoyalejohn/RPSLS/blob/main/assets/readme-files/round-draw.PNG)
+![Round draw modal](https://github.com/Awoyalejohn/RPSLS/blob/main/assets/readme-files/round-draw.PNG)
   
-![the modals](https://github.com/Awoyalejohn/RPSLS/blob/main/assets/readme-files/game-win.PNG)
+![Game win modal](https://github.com/Awoyalejohn/RPSLS/blob/main/assets/readme-files/game-win.PNG)
    
-![the modals](https://github.com/Awoyalejohn/RPSLS/blob/main/assets/readme-files/game-lose.PNG)
+![Game lose modal](https://github.com/Awoyalejohn/RPSLS/blob/main/assets/readme-files/game-lose.PNG)
+
+![Game draw modal](https://github.com/Awoyalejohn/RPSLS/blob/main/assets/readme-files/game-draw.PNG)
 
 ## Testing
 
