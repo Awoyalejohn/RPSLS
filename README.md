@@ -24,33 +24,33 @@ The live link can be found here - https://awoyalejohn.github.io/RPSLS/
   - Featured below the header.
   - The controls area gives access to the how to play button, restart button and music button.
   - When the user clicks on the how to play button a modal will pop up and give a brief explanation of how you play the game. The modal can be closed by clicking anywhere on the screen.
-  - The restart button clears all the values on the page and starts the game again..
+  - The restart button clears all the values on the page and starts the game again.
   - The logo is white with a game controller icon next beside which contrasts well with the blue background.
   - The music button plays the audio file put inside the game.
  
 ![Controls area image](https://github.com/Awoyalejohn/RPSLS/blob/main/assets/readme-files/controls-image.PNG)
  
 - The game area
-  - Featured below the controls area
+  - Featured below the controls area.
   - This shows the area where the hand gestures will display when one of them is clicked on to.
   - The box on the left shows the players choices and the box on the right shows the computers choices.
  
  ![game area image](https://github.com/Awoyalejohn/RPSLS/blob/main/assets/readme-files/game-area-image.PNG)
  
 - The round area
-  - Featured below the game area
-  - This tracks the rounds that pass
+  - Featured below the game area.
+  - This tracks the rounds that pass.
  
 ![round area image](https://github.com/Awoyalejohn/RPSLS/blob/main/assets/readme-files/round%20image.PNG)
  
 - The score area
-  - Featured below the roundarea
-  - This keeps track of the wins, losses, and draws that occur every round
+  - Featured below the roundarea.
+  - This keeps track of the wins, losses, and draws that occur every round.
  
 ![score area image](https://github.com/Awoyalejohn/RPSLS/blob/main/assets/readme-files/score-image.PNG)
  
 - The hand gesture area
-  - Featured below the score
+  - Featured below the score.
   - This is where they will select their choice button when going against the computer.
   - The buttons have an orange hover effect when the mouse hovers over it.
   - This makes it easier for users to pick the choice that they want.
@@ -66,14 +66,14 @@ The live link can be found here - https://awoyalejohn.github.io/RPSLS/
 ![footer area](https://github.com/Awoyalejohn/RPSLS/blob/main/assets/readme-files/footer-image.PNG)
  
 - The modals 
-  - A group of seven modals that will pop up depending on the condition
-  - The how to modal shows how to play the game and can be closed by clicking the x  button or on background
-  - Round win modal displays whenever the player wins a round
-  - Round lose modal displays whenever the player wins a round 
-  - Round draw modal displays whenever the player wins a round 
+  - A group of seven modals that will pop up depending on the condition.
+  - The how to modal shows how to play the game and can be closed by clicking the x  button or on background.
+  - Round win modal displays whenever the player wins a round.
+  - Round lose modal displays whenever the player wins a round. 
+  - Round draw modal displays whenever the player wins a round. 
   - Game win  modal displays the player won the game if the player wins 5 rounds.
-  - Gamelose  modal displays the player lost the game if  player loses 5 rounds
-  - Game draw modal displays whenever the player draws in 5 rounds
+  - Gamelose  modal displays the player lost the game if  player loses 5 rounds.
+  - Game draw modal displays whenever the player draws in 5 rounds.
  
 ![Round win modal](https://github.com/Awoyalejohn/RPSLS/blob/main/assets/readme-files/round-win.PNG)
  
@@ -104,9 +104,9 @@ The live link can be found here - https://awoyalejohn.github.io/RPSLS/
 
 ### Validator Testing
 - HTML
-  - Now errors were returned when passing throught the [official W3C Validator.](https://validator.w3.org/nu/?doc=https%3A%2F%2Fawoyalejohn.github.io%2FRPSLS%2F)
+  - No errors were returned when passing through the [official W3C Validator.](https://validator.w3.org/nu/?doc=https%3A%2F%2Fawoyalejohn.github.io%2FRPSLS%2F)
 - CSS 
-  - No errors were found when passing througj the oficial [(Jigsaw) validator.](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fawoyalejohn.github.io%2FRPSLS%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+  - No errors were found when passing through the oficial [(Jigsaw) validator.](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fawoyalejohn.github.io%2FRPSLS%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 - JS
   - No errors were present when passing through the javascript validator.
 - Accessibility
